@@ -1,0 +1,5 @@
+# Preserve upstream formatting while keeping `git diff --check` strict for
+# developer-owned examples and repository files.
+apps/*/app/src/main/java/org/libsdl/** -whitespace linguist-vendored
+apps/*/gradlew.bat -whitespace
+apps/*/third_party/** -whitespace linguist-vendored
