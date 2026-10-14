@@ -6,3 +6,6 @@
 **/local.properties
 **/third_party/SDL2/
 *.apk
+/*/squared/
+/*/build/
+*.bak.*
