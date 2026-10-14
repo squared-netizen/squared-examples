@@ -6,6 +6,8 @@
 **/local.properties
 **/third_party/SDL2/
 *.apk
-/*/squared/
 /*/build/
 *.bak.*
+/*/squared/build/release/
+/*/squared/build/debug/
+/*/squared/.vendored-rev
