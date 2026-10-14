@@ -1,0 +1,3385 @@
+{
+  "record_version": 1,
+  "generator": "squared-pg",
+  "generator_version": "0.1.0-alpha.1",
+  "project": {
+    "name": "demo",
+    "working_directory": "sq_app",
+    "platforms": [],
+    "framework_version": "1.0.0"
+  },
+  "resources": {
+    "template": {
+      "id": "template.android.cpp",
+      "version": "0.1.0"
+    },
+    "kits": [],
+    "packages": [
+      {
+        "id": "package.squared-core",
+        "version": "1.0.0"
+      }
+    ],
+    "assets": []
+  },
+  "layers": {
+    "application": [
+      "sq_app"
+    ]
+  },
+  "provenance": [
+    {
+      "path": ".clang-format",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "aaf41102ca73bf5191455051d4810159beb5cbd70f0159d845f0a98f8fd0a5b3"
+    },
+    {
+      "path": ".gitignore",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "99d19d4438c7cbf1f3daca618c175a1a897b15ae639f0e195ec0730c30649273"
+    },
+    {
+      "path": "AGENTS.md",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "de02c897a9fb624210b936a195653ed10b0aa0966b96f52984811ad68fdf299a"
+    },
+    {
+      "path": "Makefile",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "7529c82e9b775dbf123cd64e5dae1d2a8f518ccc7f29f45ace43c7df75fb90af"
+    },
+    {
+      "path": "Makefile.bak.20261013-163346",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "6f281b9fd8cc1fbf3eceef288865ef4701ed60b0036a3df718b20d7ca614783e"
+    },
+    {
+      "path": "README.md",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "439f970e1eca8749376a456421f81b12460417d8ed02e459b6e029ff20bad694"
+    },
+    {
+      "path": "mk/squared_android_package.mk",
+      "ownership": "generated",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "e65cfa1bd987ea2bc69077f4958ef5be91d27a99226ddd0b58537dea3ee84dbe"
+    },
+    {
+      "path": "mk/squared_android_package.mk.bak.20261013-173810",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "0a4cfb80114ca1fa3409469be910db4ab7c7875af9d6697c8267d8b71a8d3de9"
+    },
+    {
+      "path": "mk/squared_generated.mk",
+      "ownership": "generated",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "d01cd80e91a092be1aff757b84bec6ea4b5ccf786a7db2e298c7460a7ece50d6"
+    },
+    {
+      "path": "mk/squared_generated.mk.bak.20261013-173810",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "68ec94a109e285731cdd4ab824681ba42ffe081468a565434919a2c21cf7c647"
+    },
+    {
+      "path": "sq_android/.gitignore",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "0ec77071109b288644bb63062ffe72ddaedcf3e85e498623403f21205bb96a7e"
+    },
+    {
+      "path": "sq_android/AndroidManifest.xml",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "5849057d0e41caac10f639b73cfd2a6dd108e1d00838b8d83ade936e7c703372"
+    },
+    {
+      "path": "sq_android/README.md",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "e82cdfcb53c5c791e3c1587ae49252db6d61dbdc3975cd81ae1d976ab833a628"
+    },
+    {
+      "path": "sq_android/assets/skins/default/preview-large.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "f5070cb6955481ce9d9fb144b39c1570c7702c9b44a1d69cd89f1d1eb97e1da0"
+    },
+    {
+      "path": "sq_android/assets/skins/default/preview.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "a3884ddc15f80ec99ab63112e511b54d8f5b4574f84b93d4c8c7ca4978b1d367"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/check-off.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "3fa62823a6de74195762dfd34f9bdf216c3916b8485378ffa8b31e1b07448bdb"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/check-on.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "0fdf7b2aba725e47ef226a6b9f47713f4b72187a65bb0125e10151785b8b960f"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/cursor.9.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "955355694d1608a7ccd80956eafa6615759b704e6161fa372d2035491158869d"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/default-pane-noborder.9.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "0ace3aa014250a60156529c649cd7f3caca556f8f252ad584ad3e99f3094e328"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/default-pane.9.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "142e8ed81f55a6b74d6458a66abc0f77e578ffef9b1a21e84b5075aa21106836"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/default-rect-down.9.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "e0ce8575bac6393df8c72ef0355a1cfdea3b14950017530ddc07f396ea62986f"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/default-rect-pad.9.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "142e8ed81f55a6b74d6458a66abc0f77e578ffef9b1a21e84b5075aa21106836"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/default-rect.9.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "42a1e9be7330268ee9ccbab75b5997e39907940ecec8e46e330f09134e8bc689"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/default-round-down.9.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "0a3f9043e2876dea8356d47c290c1d411c8cba6163779746bcc317e5a0794fa1"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/default-round-large.9.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "3870014e13d942ec9308fa6039430803a44ede6d90d825572c96f46955a50a4f"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/default-round.9.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "49652c6a4662e3a90441c252d1082ebbee638771ceb53a9400f9045a315439d7"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/default-scroll.9.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "a1f9311ea3d333a5d080a1dda83ddb79e7d2fbeaffa5a4b65795c8d725f0f0e0"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/default-select-selection.9.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "2a3efff571db153f2f5b5ce0de31b432fa756776f153951748c259486f637dbc"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/default-select.9.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "d04794c1e353a599d7ae4292678dc6f2dfda5d43c70c5be8295fe6936f2f3d93"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/default-slider-knob.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "4858d01c6d53c06df3cd3be567192724cbaaba5a98679424dec6d0fe03774cee"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/default-slider.9.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "853bf887b5374542eea91c0d3a62cd2846a6f2fb2fdd232b9cd3aaf4d981d098"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/default-splitpane-vertical.9.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "1f8b53e0caabb99e64b68219f1ff15de21490b8fcfdfde81609aa446244bc4c2"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/default-splitpane.9.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "92fbed963142457e6511eec2ac78e2207e9f89133e4642d03e49c0d629ac7d5f"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/default-window.9.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "9a53c1bddc6bf00fea1e14cbc8b717aa79e630a5f3fa8afb9b0276b417f3f5fc"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/default.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "e9d54b257bd9db9f4e3a16f547a977934169389c747eed5c01d1624acc5c8c5d"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/pack.json",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "5dbaa813d6777d4e022e65505be3737cdb498f4365d6717b3a983a7107e3b308"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/selection.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "d58bc108daf45b55caa0f84d550f03636c64121089b0f056c03c910673611581"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/textfield.9.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "b7cd40c9a9fb27af40593398e0283ffda870ac701342069be630964f307bc302"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/tree-minus.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "e0fd5153b090baa42ca9e7c99372ad6c11cd035cd4ec4d31e2cce316a94da1c3"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/tree-plus.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "bb65ffd22368a60aefa76abebf545dbb72597e834846d0a0e6ca83e7ecbbfbc9"
+    },
+    {
+      "path": "sq_android/assets/skins/default/raw/white.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "acd6b189c6f815fd63c86581591eb719790de397219aefee30494746be866269"
+    },
+    {
+      "path": "sq_android/assets/skins/default/skin/default.fnt",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "f8563850be4bb316505eb11d452563507c72f1bb903812f6db3d43fc90a509b3"
+    },
+    {
+      "path": "sq_android/assets/skins/default/skin/uiskin.atlas",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "2ba45bdb4893768e89594767980572f5eca1a9dcec3b8e6baefed8c8406ef2d5"
+    },
+    {
+      "path": "sq_android/assets/skins/default/skin/uiskin.json",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "0a2b6413c0d9d6ffcb386cb6711f37202fe376caf1c8c2fc515c5682fd91c2b8"
+    },
+    {
+      "path": "sq_android/assets/skins/default/skin/uiskin.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "5291623549ba9b2676d04c079f45078b1465c30c3e998b827c499c7a5617e07b"
+    },
+    {
+      "path": "sq_android/entry.cpp",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "d219ecd8ccee8c7c8aa3be76c4f2e63d4865392ecc350a7a1a73599c7196b67b"
+    },
+    {
+      "path": "sq_android/entry.cpp.bak.20260925-160222",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "04280323a1e34083a156f5e6987149b221b0be3b6996b61a56027ab88b022cc6"
+    },
+    {
+      "path": "sq_android/entry.cpp.bak.20261013-152713",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "cbac244d62750ec82d9326af8df2fb8d4835963a4745c9a3ff10834c324c83f1"
+    },
+    {
+      "path": "sq_android/entry.cpp.bak.20261013-163346",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "b82f2756bf7bb21d6cc1bd8f90afe80fd740639d5db642e86cd225ef54ca18f6"
+    },
+    {
+      "path": "sq_android/res/drawable/ic_launcher_foreground.xml",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "2b4f6bd49012332a99a0478461a596a80bec55f9f9dc47de1b20afc1799f55e8"
+    },
+    {
+      "path": "sq_android/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "43fafa87ca7bad30343b10ebc7f5c5c1ef5e448c7094c9e2f129abee86c26222"
+    },
+    {
+      "path": "sq_android/res/mipmap-hdpi/ic_launcher.png",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "775939b7ebc4c7f0b5b19fe9cd111cf14d12b36258b1915cbca35759f52f783f"
+    },
+    {
+      "path": "sq_android/res/values/colors.xml",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "00d4f2b5d17986b275f12eaab21ef6e7211e03310688301c3e6146399db4412c"
+    },
+    {
+      "path": "sq_android/res/values/strings.xml",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "fc2ea054c5c33e87f052503cc2a95d4e3015ebee97367090736db17c6928aaab"
+    },
+    {
+      "path": "sq_app/README.md",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "b890a5b549c2200a1b46c2d528a2b492fa1f930e454b227f9bad9b34c32bda8a"
+    },
+    {
+      "path": "sq_app/include/app.hpp",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "01a10cabb86bd9516c03321100ccf39847122c8eb53812b055c86e5b16e0433a"
+    },
+    {
+      "path": "sq_app/src/app.cpp",
+      "ownership": "seeded",
+      "origin": "template.android.cpp",
+      "origin_version": "0.1.0",
+      "phase": "template.instantiate",
+      "sha256": "2290c8abdcc9c8eeab903b97fa9f0dac96a659062fe6b98dc373731d0c98cdce"
+    },
+    {
+      "path": "mk/pkg_squared_core.mk",
+      "ownership": "generated",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "7e8ed081ebda451fe977781c737caadc337dbb29e6edd839dd906c4d1f06e407"
+    },
+    {
+      "path": "mk/pkg_squared_core.mk.bak.20261013-163346",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "4c7a0c29a659f5348f2dca26acdc11e7899ad601e24119deeb6ce936552bba1e"
+    },
+    {
+      "path": "squared/Makefile",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "941e7cd23142020888494a81904996a360f62c9f8a963cc2b86d64465e6e8639"
+    },
+    {
+      "path": "squared/Makefile.bak.20261013-163346",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "d6034a9b54cf341363ddc0e737644524fd6c2ec84d83ee0d5904dc6f6999d4b0"
+    },
+    {
+      "path": "squared/README.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "1de4c06f4cd435427cc59933d9c507713d588d49ffc0976de9f4e5fb043c3443"
+    },
+    {
+      "path": "squared/app/application.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "450494537ed9b830ca5348a7623e64e678b7ecb36b1217fb433547f5915bacd8"
+    },
+    {
+      "path": "squared/app/event.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "83830fb89622f7fc38ff8d16b6ace14a09ed15a9c9869d63488f3b8887ca2ed6"
+    },
+    {
+      "path": "squared/app/runtime.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "d3a1525f962c73f21767e187b374ed1fa49eeda35bd6f82c6190d95780e941ad"
+    },
+    {
+      "path": "squared/app/src/key_modifier.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "71de7b2e3e91cef504bd595f1a4115a5d0caf6fc652d2309413186e92c9669d8"
+    },
+    {
+      "path": "squared/app/src/key_modifiers.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "5026c4590c53a9b099a38734894ef2301233bcc7fa7189b7441638ad6d248a46"
+    },
+    {
+      "path": "squared/app/src/text_input.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "668ec5c6e474c7f95dcb8fdb8ffe637bed7b4293814ebbc1135200be5161d3ec"
+    },
+    {
+      "path": "squared/app/src/text_input_area.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "a5a128291d156c495bc40ddeb224c7826166409a3037fc2d045cbada681da94c"
+    },
+    {
+      "path": "squared/app/src/text_input_purpose.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "f2d239913e82026da7c17e2bf9a7c5e0da3b4a7f6796f7c169ada786b8c80dfa"
+    },
+    {
+      "path": "squared/app/src/text_input_request.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "7f4fee09ad5cf5206e3ce704c4f10b5b9eead88821a64bb5de36f969979dec44"
+    },
+    {
+      "path": "squared/app/src/text_input_service.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "2eff173341d769d91152bc9d9e920e2027e9c474f7a90e8929de345c4abdacdb"
+    },
+    {
+      "path": "squared/assets/Makefile",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "ca06a26eb7f3e4d8aacdbbc00b760f431bd1d7dfd450ac58563f9ac4641d3822"
+    },
+    {
+      "path": "squared/assets/asset_manager.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "8146fbf04a82d3367659fa8de9f8f30fff39f4ef6977f5183ffe11e4b19e5fe0"
+    },
+    {
+      "path": "squared/assets/assets.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "f25b3b41c7ffd8f73cf68e3bf85a64794dbfbb8560270bc144695fbb022195f5"
+    },
+    {
+      "path": "squared/assets/src/asset_error.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "1aa8789cd00e59f039aeaad34c03b4ec57f0ca2bd5c1c44a15576798711cd022"
+    },
+    {
+      "path": "squared/assets/src/asset_error_code.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "5b63528c7ab05ad876c74f6349802430b4b61de062f815588dd4deeff2d126e1"
+    },
+    {
+      "path": "squared/assets/src/asset_handle.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "aea3bd61082faa9d5ec7eadcfac9f818b979963d4b8b8d76d70af463630ab7e8"
+    },
+    {
+      "path": "squared/assets/src/asset_load_context.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "c76a90ddcb66f035cfdb46583a02ae332f2e5c24a880a04d308d7ba319a153fc"
+    },
+    {
+      "path": "squared/assets/src/asset_load_result.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "08c7122a51c22178beaa486cdfcae89d0aec88b0b9dafab9294fc5353813b2d7"
+    },
+    {
+      "path": "squared/assets/src/asset_loader.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "8a6826d2b2d575406ab7a69cc315e739c8c7c36eadd8d31b35c395d8fae3b920"
+    },
+    {
+      "path": "squared/assets/src/asset_manager.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "fb6dd6c7a9f6403b5b006f46cb43e417783f96c558f2647cbacc7d695f8f1ffe"
+    },
+    {
+      "path": "squared/assets/src/asset_manager_options.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "d20ae223d1b5308e668ce566b28ce2948b95da88126dc911ca6b2d8e096c4302"
+    },
+    {
+      "path": "squared/assets/src/asset_type_id.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "7118f15131da92ca47a9dff8ddb894e5e33a7b4d579a4effa5083321f8c3f848"
+    },
+    {
+      "path": "squared/build/common.mk",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "ec9ebc8bd6942d7d7d2b6f8f5d9e7365b6a17958b1658d072397f2073949cd12"
+    },
+    {
+      "path": "squared/build/release/dev_log_test",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "dfcbe34f85c869501717298f9f5bf5dab8da5dffc381cf75cb71d1cbd23a3e95"
+    },
+    {
+      "path": "squared/data/Makefile",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "bbc09466d8a90ff3e75c1a4ed4206645e578889147ded3ec8f75af279def77ba"
+    },
+    {
+      "path": "squared/data/json.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "21df4478d89b325cd42b9a0405b1e203bba92543163e073c39c7d59f2beb80ec"
+    },
+    {
+      "path": "squared/data/json_value.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "2af5899ee874ee0cbead18970fb3f4e9dbe849fb62bdf9dadb7581f3d1e28a3e"
+    },
+    {
+      "path": "squared/data/src/json.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "6b953d3953286935b43cefefebcbfb9982f4a9bac9c2be0ac1994832e9e76f39"
+    },
+    {
+      "path": "squared/data/src/json_error.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "2c6bc455dedde6ad1c1820b0d19572729ac2a6002afa502633b1c3ccbb32df7b"
+    },
+    {
+      "path": "squared/data/src/json_error_code.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "6956609a8917c2429dfb81ebea4c233a17ff6c516b2a1905f5e3f1147655c2c7"
+    },
+    {
+      "path": "squared/data/src/json_parse_options.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "bc4db80bcfe794c411064957e55230f014f871a16dd51ca1b6f8e982a2b1de41"
+    },
+    {
+      "path": "squared/data/src/json_parse_result.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "05bde8b291ce878c3c10fd5b6cb6ffa7688353761e43e6c7ca6bd2c638b18edb"
+    },
+    {
+      "path": "squared/data/src/json_value.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "765201184a2a6bbd85a415645a93a9fb57566023ff70cea052081f3cc55359e0"
+    },
+    {
+      "path": "squared/data/src/json_write_options.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "6637dda0066a6d0bdb76a41bbc31303e985aa252d86ab71af9158011796a4818"
+    },
+    {
+      "path": "squared/data/src/json_write_result.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "ff14fd5ce0b0aa044b1b8ba5aab9865dcff3864fad595e95f42e448c185724d3"
+    },
+    {
+      "path": "squared/dev/Makefile",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "2ec4be4c7f07bf40399d7ec8904463370de4540585b2d674b86c46f97d1df903"
+    },
+    {
+      "path": "squared/dev/dev_log.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "7408c4358b9d81a9885d77330cc25b05daa8e489985e17aac52caa06776c0e80"
+    },
+    {
+      "path": "squared/dev/src/dev_log.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "794d1e91cca7b0c3ecd0a06a7c9a52ef5f082c575268f9e0a1d4808c9e59402d"
+    },
+    {
+      "path": "squared/dev/test/dev_log_test.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "5febefe202f0ed3b8e88abbb609a2cf6188e0514579a368023d075053fb0708a"
+    },
+    {
+      "path": "squared/docs/Graphics.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "2f296925defccb6d2230fbe86a6fedcd159362dc99c165c1ff9f6dac5d6c4058"
+    },
+    {
+      "path": "squared/docs/Graphics2D.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "72c90cc78b85e8ffb8c6ec44debdd68980bd03bcf6f09e5b0ba6c6e009bcc51d"
+    },
+    {
+      "path": "squared/docs/Gui.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "4fb5faeda4194775a413fc3533e5d6269afe7d90343f69558f74dd07023a5143"
+    },
+    {
+      "path": "squared/docs/Math.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "1584a1b153f6c57be6f140582416a5fb1300003b7e10552987061b62e46a1d71"
+    },
+    {
+      "path": "squared/docs/Pinned-Gdx-Skins.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "b7f5d724eb48ae887b66deb7831a09beb7227d0a1995886a89b34952ea615156"
+    },
+    {
+      "path": "squared/docs/Scene2D.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "9b5d19f17b8f83aed7c3c7c3866663c56771c4befcd714abf5fae3b1c3642b6a"
+    },
+    {
+      "path": "squared/docs/Skin-Loading.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "088def7c244fa95f1cb138b61e36d5cf2939fb0f364259851a8a763dfceb31d8"
+    },
+    {
+      "path": "squared/docs/Time.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "14b8b6d3c663aa51c1eb923f349f7dca4384a33967b891f3d0fd3eef4b93a9cb"
+    },
+    {
+      "path": "squared/docs/developer/README.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "8d4fd66007977e3ade32dbef74f4966748e6d130aa3238773675111fdcf1adb1"
+    },
+    {
+      "path": "squared/docs/developer/README.md.bak.20261013-163346",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "59044c127c2f61f93eafd242aa99861512d6565f08e23e3d233a354598fcac2c"
+    },
+    {
+      "path": "squared/docs/developer/app.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "dcc295cf30e9cdeebca6316dfc2d5d90566ccd753364f682464549898964543a"
+    },
+    {
+      "path": "squared/docs/developer/asset-index.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "6ca62a849360eabd7af997a11508e9c4d59c4f40538ac15c647fac8b6c79771a"
+    },
+    {
+      "path": "squared/docs/developer/assets.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "7f5f18f36c28bcaf3a7efe1b6c8877b5b65b1ad3600be9149d89e2a53ef62e34"
+    },
+    {
+      "path": "squared/docs/developer/build-and-toolchain.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "a5cf345a89e74139d5432075c26cdd026f13ece44ca0d19635c929fed9e18aa7"
+    },
+    {
+      "path": "squared/docs/developer/data.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "b84a8efe12db74414cdc30aee29210b39f6d53f613ac1347ece1c2f87834c16c"
+    },
+    {
+      "path": "squared/docs/developer/design-patterns.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "521f4d74bed39e1e7db1aafca92efadcac8d8b8fb58cf6bd7b0b98ffb53bb7a7"
+    },
+    {
+      "path": "squared/docs/developer/dev.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "07ee4a9bc4450513814c141d5afefdbc0f14a3f939aa296f7873891c4dd5a283"
+    },
+    {
+      "path": "squared/docs/developer/extension-policy.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "cd6c015cf1ac5d7f6ec2300771ed4f22b9d531d7ae2298981fa0a6d106913c31"
+    },
+    {
+      "path": "squared/docs/developer/file-layout.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "5671d8f69bedfca203641d07872b696b50951367eef102e3509f9acba236959f"
+    },
+    {
+      "path": "squared/docs/developer/files.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "3d8f2210915769af0a38cb1a459bf5312ea168fe2c1260502fab53a41e74720a"
+    },
+    {
+      "path": "squared/docs/developer/gles.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "7d55b4001678ddd58633fd065fe48a8d8ecf1619106ec7f171336f576541a555"
+    },
+    {
+      "path": "squared/docs/developer/graphics.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "fa72aa91dbb12dbf258d35697ae85cd6ebfa9a02233ce3bc8decd24079175a17"
+    },
+    {
+      "path": "squared/docs/developer/graphics2d.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "b5cc55ec16c4bcdc322cc26533dc30b9a9dbf6d2c6f12da33260e837a7a703af"
+    },
+    {
+      "path": "squared/docs/developer/graphics2d.md.bak.20260925-155358",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "5c831bb1fb1727e743c648709ce1fb462f0846a926b9859c6287d19f15a7786d"
+    },
+    {
+      "path": "squared/docs/developer/gui.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "0511e2a3a545b37d5f25a58def4e4d15c81950efc93e7f05b7cf93519c788c77"
+    },
+    {
+      "path": "squared/docs/developer/math.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "7188515e472749c8693a21e385e904e24d0934a22e424e20635c586a9ce42efd"
+    },
+    {
+      "path": "squared/docs/developer/memory-profile.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "4cef4cf0c9b5d523a803de8caabecf13affd701d0247f9fa28fc94dd7019c9e2"
+    },
+    {
+      "path": "squared/docs/developer/messaging.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "507a1577c5845ec89920a84e86ccc947fcade6a6e7ba87111014e0356f08276d"
+    },
+    {
+      "path": "squared/docs/developer/priority-audit.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "f28ffe4a813bfd632d63412cde3e43d38c07522bbdbfc3b783d90e661a2a4c69"
+    },
+    {
+      "path": "squared/docs/developer/refactor-notes.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "6acece87ba97e24f82712a3ba10ebde1baa3072e8e3461f49a2cbb495766da6b"
+    },
+    {
+      "path": "squared/docs/developer/scene2d.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "b00f54ac78b6686bbea09ba3ba756c1505dbb49f8e72a4c404570bae531e9152"
+    },
+    {
+      "path": "squared/docs/developer/standard-library-deviations.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "bfaaac7a18727c0d311e269105702f90f9e64332021f51f515c4de42ee2996ae"
+    },
+    {
+      "path": "squared/docs/developer/time.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "df25f9e5c7102909153b4db54a47320d99f577724bfcbd89f35c9b820fd1d46c"
+    },
+    {
+      "path": "squared/docs/programmer/README.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "b1ea98d2bf789e62947f67d51d41fd05245a8a3561f5bff7f61fc2c40ad36094"
+    },
+    {
+      "path": "squared/docs/programmer/README.md.bak.20261013-163346",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "43323cd8fcab0352e9efc0a61ce8de612b5d40e8282c3a2d674a2a3c244a6e1b"
+    },
+    {
+      "path": "squared/docs/programmer/app.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "cb597e016dd67dff2f459739dbb5b4c90f90412b9e6a127c62f6b0c8a12d3615"
+    },
+    {
+      "path": "squared/docs/programmer/assets.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "f2f4ffc4371ea183d256d21e3bfc992b5531592b0b9022dbf0e931c974e049f3"
+    },
+    {
+      "path": "squared/docs/programmer/building.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "d2c3897fc86a534b2ca33f6fa5e89f288837e6c5f27b85cc2c1c50f04cff943a"
+    },
+    {
+      "path": "squared/docs/programmer/data.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "3b4a1ad39c0268af0755d12f81c88b4416d3f28ada26913718245dc06076974c"
+    },
+    {
+      "path": "squared/docs/programmer/dev.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "4348190621776956aa5f413bb8629926989c045a185aedf4985fcf3977c38d66"
+    },
+    {
+      "path": "squared/docs/programmer/files.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "2f88cf1c867ff762a9bb59f1904fd88983518ab705b96683f1e379ccf9fdf318"
+    },
+    {
+      "path": "squared/docs/programmer/getting-started.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "215371cf278e0049435709acea344c6d826daaccc43c1cc6a41b089399dc34de"
+    },
+    {
+      "path": "squared/docs/programmer/gles.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "4cc33f0cf648cf365f7c01846a49177d7c7133284feb4951b88e9c038834a7f7"
+    },
+    {
+      "path": "squared/docs/programmer/graphics.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "8dbdbc8496f2f427b5b76eab12cfc307b292ea09d6e8a586135708bb6aa448df"
+    },
+    {
+      "path": "squared/docs/programmer/graphics2d.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "9acdd494f5a611194f377327b8288a99aad7eef49e03610b7f8075cf22a26cb5"
+    },
+    {
+      "path": "squared/docs/programmer/graphics2d.md.bak.20260925-155358",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "169c6f02485edbaaa305f64905f06190347565ae3bef2bcf1c4cd90d117727b0"
+    },
+    {
+      "path": "squared/docs/programmer/gui.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "d89b2c516f602f75bfd204e8ccc32fda5c43661ca2d785b57de9551940fa5662"
+    },
+    {
+      "path": "squared/docs/programmer/include-layout.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "704a28eb9beb399a244dc7ec6065fece5269c47028f3459cba58d0a378116f42"
+    },
+    {
+      "path": "squared/docs/programmer/math.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "79a61c22430de2cfc130514de51dd0b931bc578fc939347d9be32822b3713266"
+    },
+    {
+      "path": "squared/docs/programmer/messaging.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "78b5b33fea4c3912d970adcb5374c3700c61305431e4d889d554ff564fa45c1a"
+    },
+    {
+      "path": "squared/docs/programmer/scene2d.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "9cad53f0a4d86f9f2a109e618cddd3545c7078f894f8a7aec8a79df4f3916fc3"
+    },
+    {
+      "path": "squared/docs/programmer/time.md",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "c1eb964309a140dd2e248353d6aab31655145e713caf95666874298fa2da86ac"
+    },
+    {
+      "path": "squared/files/Makefile",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "7d30faa43714580c7b46db6cde5b64380b9b4fc68c5695c18cb1d5b4c9aae2d9"
+    },
+    {
+      "path": "squared/files/android_asset_file_system.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "e7e1568031483a338ae2d7631a2556f5ba94aa4a7f5126f78dc41213377a95c5"
+    },
+    {
+      "path": "squared/files/file_handle.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "3e868130fd618fb7c6ad21e0330d462bb7132ac4cb1ea80c63d9ec4ecb8e0fd5"
+    },
+    {
+      "path": "squared/files/file_system.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "f433c6f3a47f1b8085ad91bf335f6c7c04fd8a539103ed27807d85c13fc478e9"
+    },
+    {
+      "path": "squared/files/files.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "7fe8ae46b3931679570b1bda42bae565141831a9ea8840e18a2afcbc5221b9ef"
+    },
+    {
+      "path": "squared/files/posix_file_system.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "891e4e52c2ea662bb8c3a2006607c7fae93c2e80da02566d16598b649ebd5fea"
+    },
+    {
+      "path": "squared/files/src/android_asset_file_system.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "a4ebe643df7c5fa1f527c4f3557510be2c24cb87af1ebf7b21f9450ecb99cf44"
+    },
+    {
+      "path": "squared/files/src/file_error.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "5eeb8cb9f4d38f9116b5a99cccddff6484a105c733ed36673cceb0d06c1a1d9f"
+    },
+    {
+      "path": "squared/files/src/file_error_code.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "02e0392e6de4b26f3aedc0a90005d3263a3c898a95c3b2011f46bc1630a781b5"
+    },
+    {
+      "path": "squared/files/src/file_handle.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "aabd36172e29c5f2ae53620a29d596ab6d925b3c679eb7cec6c7c6699f4bfac4"
+    },
+    {
+      "path": "squared/files/src/file_read_result.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "a269b5d0707c9fa5e568653da537222b1b51dd13c8b99b2b2fa7928514e81a2c"
+    },
+    {
+      "path": "squared/files/src/file_system.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "1e69b5b7a82f6ceaca38f09efa40330971ab1aaffb4f749fcc839e6a6f926f4a"
+    },
+    {
+      "path": "squared/files/src/file_text_result.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "0ca1bf02cea87eb28871c8b592d71e0bdcc1b630ca7248d8f75903b2dc0ea5f4"
+    },
+    {
+      "path": "squared/files/src/file_type.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "d9b6a3b4a2d0ddb34a7bc3a01cebe33de6ec95c7682d20d834a28ac1014c6480"
+    },
+    {
+      "path": "squared/files/src/posix_file_system.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "2bda025867ecede5a47be7cb4b51dbda50b77bfef20df0d7206cd61b6ade2340"
+    },
+    {
+      "path": "squared/files/test/android/asset_manager.h",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "f3aa9e3cf111fdfc3a881981a5914aa3325c8c79f5a5a0bcd05d7539272cf751"
+    },
+    {
+      "path": "squared/files/test/android_asset_test.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "c53403466ea68d8d198928ab6411a939e925446b089b8650f2da24a98cc9da60"
+    },
+    {
+      "path": "squared/files/test/asset_stub.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "3fe9d95c0d8a8fe4285a39b98e7ca2804b6f40072b610f010e93a7f73fc83bfa"
+    },
+    {
+      "path": "squared/gles/Makefile",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "31ef8e38d21a7dc772c500326fcfef914cb89f297ef364278ffea9bfa4324339"
+    },
+    {
+      "path": "squared/gles/buffer.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "82aac183195a905daf1a835d4b9953b16fef9885bf47580355510640d00175a5"
+    },
+    {
+      "path": "squared/gles/gles.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "abd014c9f3ffeda3523475114c00b0ed1bc5d7475f60724dd68e624c1fda2b26"
+    },
+    {
+      "path": "squared/gles/program.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "9bc3823cc4a55738160a084cdb3f78efa6f1e180eeed88baa962b77f1c75f3c2"
+    },
+    {
+      "path": "squared/gles/shader.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "2af59bd0e03be0ba8cf28e4bd3c873123a36e80010a9f1496c32b492860019f6"
+    },
+    {
+      "path": "squared/gles/src/attribute_info.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "c78d33b5726b84b9410b94205e88e65a8aa8daf163188283ed05c675dbf5c884"
+    },
+    {
+      "path": "squared/gles/src/buffer.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "5c7f24efd4e9dca5040a8a2225ab279c0e1ca14a61abd5b4467931ff19efb6b6"
+    },
+    {
+      "path": "squared/gles/src/buffer_target.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "0f12c5a77a3dc57e7445ec8dd867065a449ff825b4c55e0cbf4208036f847086"
+    },
+    {
+      "path": "squared/gles/src/buffer_usage.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "9697a21f96448d6bfb0fb5c09f813b3ab72dacfdbbe43acc3bcf2f7dfae1eddb"
+    },
+    {
+      "path": "squared/gles/src/gles_error.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "4975d145f0b5ed7ae9c7638e496402d74bdc62bafab2ccf127de9b80deeee68c"
+    },
+    {
+      "path": "squared/gles/src/gles_error.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "fdfbc0260746eaa0629828e2f795c079952dc56a3e6c5351ddcf675430992636"
+    },
+    {
+      "path": "squared/gles/src/gles_error_code.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "4edb914545823523325329e08cdaf6d426d3be08bbfa2b31462095878458d811"
+    },
+    {
+      "path": "squared/gles/src/program.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "323e36db66b33c253145383429626f1d1e810bf443f667a6e4db297d01d16722"
+    },
+    {
+      "path": "squared/gles/src/shader.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "dbe2c3b5da2b36e1680066be625d179965af3b19890e74dbb00fda27f1c07d3a"
+    },
+    {
+      "path": "squared/gles/src/shader_stage.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "c02693f2634d948c42226c7d345497a62176dab2992ed32473ed21f0cdc63247"
+    },
+    {
+      "path": "squared/gles/src/texture2d.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "69440b48055925efec899f01a5a1da296f32480d880ca5d03ee6f9fa4ada8b55"
+    },
+    {
+      "path": "squared/gles/src/texture_filter.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "bb4df3959cc6a68e66e2cc31358fb29dbd93f2a771fcd6e9a39b2b96cd8c1443"
+    },
+    {
+      "path": "squared/gles/src/texture_format.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "2979dc20da70b5491bdfb2f67f95756a4cf9879b5a70b3a61f77efa71e42d46f"
+    },
+    {
+      "path": "squared/gles/src/texture_wrap.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "f2ee47e92f371cbab9c8f3fef53a1f4430de8389bfa5fc6d53f9df9364cdf165"
+    },
+    {
+      "path": "squared/gles/src/uniform_info.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "6695110b0878c3cf1c712632c5efa68bc348d1647bbbdb00e7f52f9546c695cf"
+    },
+    {
+      "path": "squared/gles/src/vertex_array.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "d98d63ab0c2d31e3936aeb1ee30caac940a02bb997c9936bb4160e602b83d371"
+    },
+    {
+      "path": "squared/gles/src/vertex_attribute.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "44167e8694e1898807841b83602d8725b0085c876493f44c8805471199ffb8dc"
+    },
+    {
+      "path": "squared/gles/test/gl_stub.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "0bf91ceed905a5b655e3955c7638c471b1353e0d072a847fdd9907a30ce9af34"
+    },
+    {
+      "path": "squared/gles/test/gles_test.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "34b7a2d0a141d46531dd4b292531552db7239a0270d401c5f13cf0d6e6f05745"
+    },
+    {
+      "path": "squared/gles/texture2d.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "4fd22ad1580cca88841ce4c0435d436898b098887a38bc2242cd6fefeb955a46"
+    },
+    {
+      "path": "squared/gles/vertex_array.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "741d85a3b2f7dbe018ffa3b567907536a64d97d7acee148b8a6184a925cf68e6"
+    },
+    {
+      "path": "squared/graphics/Makefile",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "31da8d699751c6d11701120dd464c9cfc4c98240f2b8eabfe0f67102164b7b26"
+    },
+    {
+      "path": "squared/graphics/atlas_region.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "c1d7c4d59c7faf72b9df956f684c4920167f391ca85e9b93739f803479b8384b"
+    },
+    {
+      "path": "squared/graphics/bitmap_font.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "5f45c074726ed361cb910ff6f304ea3bc18b121403b43c5eac3c9a3a141290b8"
+    },
+    {
+      "path": "squared/graphics/color.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "584466fc550fddbc95ddb76c249c223dbfb971b740f47c6d975a91476af239d1"
+    },
+    {
+      "path": "squared/graphics/context.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "bdddd6f24e908f72089fdcc4e5b73a8c602363a7ea4d18357cd20410f3934660"
+    },
+    {
+      "path": "squared/graphics/glyph_layout.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "e212bbc1f019389663615955b44aab517633b4c1e39547dcc31f21f596f2ecc8"
+    },
+    {
+      "path": "squared/graphics/graphics.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "009c15f6e05f3fe39156b60dfab2200dc8daeb8df0070c9f4eba0d7eb9b1ff2b"
+    },
+    {
+      "path": "squared/graphics/orthographic_camera.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "1c49404a9efab192de32972c3818510eef1d18315c13f6684fd31b0072908a95"
+    },
+    {
+      "path": "squared/graphics/sprite.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "767ad51baa1ca6e1672270147f082e8b8895a19783c81a5629766574f3c2700e"
+    },
+    {
+      "path": "squared/graphics/sprite_batch.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "0213b07b9af94db2c0d567e0ff433fce14323f0dee21c68236c4451773d8910f"
+    },
+    {
+      "path": "squared/graphics/src/bitmap_font.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "fed8482f8d93c3c0a92bb7a60097c85d059e09d20955bca49c70f02e05b4a5f1"
+    },
+    {
+      "path": "squared/graphics/src/bitmap_font_error.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "d0eb829a9ca673d37186c12b5d3dad5b9aaeb6be70fa1c530802f7f649576a4a"
+    },
+    {
+      "path": "squared/graphics/src/bitmap_font_error_code.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "1db422d6a445e057026c007d5b422459dad32350ae78be81dce6049f45e28a1e"
+    },
+    {
+      "path": "squared/graphics/src/bitmap_font_info.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "f7c05ee2bd988ab23c8902e32480f136fdac5c6db93252bbf8e26a44f4c9268b"
+    },
+    {
+      "path": "squared/graphics/src/bitmap_font_page.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "b54f6cbc0f8596ac240da9427e8aa3aec4fbb4e7314961d9228384dd42a62e36"
+    },
+    {
+      "path": "squared/graphics/src/bitmap_font_parse_limits.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "ae43022c276e5d1105c3761116cd675d8a56b44191d66bfa802f1b4a15ef1c3c"
+    },
+    {
+      "path": "squared/graphics/src/bitmap_glyph.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "fb8ca95576215d78759375cc4c84634bdf66ebba6f0190d32504630272993441"
+    },
+    {
+      "path": "squared/graphics/src/bitmap_kerning.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "c1b91989c7b6c3b7f39eb8f0d4841e55f8bf7fd48af550c9028773f9ef6b7cb9"
+    },
+    {
+      "path": "squared/graphics/src/common/atlas_region.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "d287ee15c273dec6b957b911fcb5a84059e1655243d4a0bf8513961ace1b4362"
+    },
+    {
+      "path": "squared/graphics/src/common/sprite_batch_common.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "6717fbbc4fc74dfca2c29708ea6fc860c436c7d8ef27199c9256624f4fb9237b"
+    },
+    {
+      "path": "squared/graphics/src/common/texture_atlas.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "0d6d207c4fca78292fa13c5dfab564c807afa7f9f5a1684d582e30f65f2f6e06"
+    },
+    {
+      "path": "squared/graphics/src/common/texture_common.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "53c336abd4e364027c61aac3d594661690ee0f141d2bc38aa71ed5acbe93ff65"
+    },
+    {
+      "path": "squared/graphics/src/context_config.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "1c22b2d8b6fb3c03b8dad2a31b587e8bde2a519dfb276fad4d29d69f5ed714be"
+    },
+    {
+      "path": "squared/graphics/src/coordinate_origin.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "a2217183c7c40c988200e9e63b5056b803a05f5370cfc45ba87e69a4020371a3"
+    },
+    {
+      "path": "squared/graphics/src/detail/bitmap_font_detail.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "ac68d65c347242718053a23569c4c5a1a52ac3a7e41bdda510e01bbcccc8dc2a"
+    },
+    {
+      "path": "squared/graphics/src/detail/image_decode.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "8b080683abe80791d2a04d9a3676d73fa9224a0af88bfa3e99baf68ce8015715"
+    },
+    {
+      "path": "squared/graphics/src/detail/image_decode.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "a6628bbd96e5ad27897f885ecd09893c28b9b2739996920711644aeb3d551afe"
+    },
+    {
+      "path": "squared/graphics/src/gles/context.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "24b48506648520fa71d2f4c31258f0b82480ec69b73cc87102896dd2fdd3d73e"
+    },
+    {
+      "path": "squared/graphics/src/gles/sprite_batch.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "fd534506c418bc8d417003e41cb298bd5c9744b399a2123b05a961f1a584ac83"
+    },
+    {
+      "path": "squared/graphics/src/gles/texture.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "ff6360ec8d2279ad2698cbbc8dfb6186397100d1cce7c8f13b7af235b6c8a272"
+    },
+    {
+      "path": "squared/graphics/src/glyph_alignment.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "7a87ee5295a297be8d7d23ed52eb2a72e801f253840713d1053d8b4be5cb32af"
+    },
+    {
+      "path": "squared/graphics/src/glyph_layout.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "fe528f6bc4e63c507c6147fbee554a9755724d900b2b22946efa2534366eee4b"
+    },
+    {
+      "path": "squared/graphics/src/glyph_layout_options.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "4f61e03c025d93851e17199294d86da53757fde450544a87f58f08b85d7015fc"
+    },
+    {
+      "path": "squared/graphics/src/glyph_line.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "8dd0acac9724acb3e299713c360a24957c0438115e6d7c3316691988341b864a"
+    },
+    {
+      "path": "squared/graphics/src/glyph_placement.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "689ebcfab8d500080faa713fbcf19639f505f0fecd6d8dcb743fde65585dbc98"
+    },
+    {
+      "path": "squared/graphics/src/null/context.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "66dc1c04848c55e017154a5bcef8ec5652f2447752f01e76e8e6d2307864a2fb"
+    },
+    {
+      "path": "squared/graphics/src/null/sprite_batch.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "dd4ca3255b6e086d3a711445006eede7707874c3dbdba1ce7755cb4a75a233d9"
+    },
+    {
+      "path": "squared/graphics/src/null/texture.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "a9c6c10ad4400097b43361f64b9d9047a0935097acbcd21465c02e6d98ea7e28"
+    },
+    {
+      "path": "squared/graphics/src/orthographic_camera.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "d2ee2782141ba31baff4185a11618d38564cd6cd49587870daa6e07e25b021c7"
+    },
+    {
+      "path": "squared/graphics/src/texture_filter.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "e781105e1dcea4ae3842b5a679e3bd6b7de212ef21bdefd25617a736493f824f"
+    },
+    {
+      "path": "squared/graphics/src/texture_recovery_callback.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "cf1d8615e9c327dab118315adfcfbe012cc3db7d3c5430b6c189da0118d84fc6"
+    },
+    {
+      "path": "squared/graphics/src/texture_recovery_options.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "26abfea17b61d0a7ad53d0ac10b0473b88894066af569c02d55692bc3d373e9a"
+    },
+    {
+      "path": "squared/graphics/src/texture_recovery_policy.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "556f3aebc4bfbf8b2f76112f98ab1b6b74813a7722a984bf3ef42daf0f83889d"
+    },
+    {
+      "path": "squared/graphics/src/texture_recovery_target.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "2b94a83c06d7da53192366d7e4e2b7cec0d5945fbefa0d4f85d8e2cd0725354e"
+    },
+    {
+      "path": "squared/graphics/src/texture_wrap.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "878596ee6bf18be017433005c9cd1866a8df0f19acf3ce6eaf3841566ce2d10d"
+    },
+    {
+      "path": "squared/graphics/test/image_decode_test.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "475847f19f8cfba230da7e78830004567a5a10417ce582db6632cf04ff87bb9f"
+    },
+    {
+      "path": "squared/graphics/test/sprite_batch_test.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "af1e972955bece3efeaf8098e9f5e48f5c47706cdd3c24f9fceaa56f3a9921b7"
+    },
+    {
+      "path": "squared/graphics/test/texture_atlas_test.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "0c817500591341cb539b3d652689ec78233a9c7e443c2c8267b9ea90145c3344"
+    },
+    {
+      "path": "squared/graphics/test/texture_test.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "888aced352d757f17dc7acb3dedcdc59844bac272f23f036f416a8270aa5c340"
+    },
+    {
+      "path": "squared/graphics/texture.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "13448012cb71a3282c27987243948534b0df8c97cdaf5af177e2f3b030befbb7"
+    },
+    {
+      "path": "squared/graphics/texture_atlas.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "0dfdba59caedbf9e4ebd98260d3baae340f5d58f7d644b4d0c953f52324171d1"
+    },
+    {
+      "path": "squared/graphics/texture_region.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "14a60863d3e8dcca8f9a8ac8f2310dce3a12131c88c43c734938f73121b0b54c"
+    },
+    {
+      "path": "squared/gui/Makefile",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "f455ec66e65d7b09f9d1781b631fe0e02480cb17c87f28bce49aa6a33abab9a5"
+    },
+    {
+      "path": "squared/gui/actor.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "aaa0408ec76041c4cc4ae77f4d2525545d92fe40482910e236daa7bb7492424e"
+    },
+    {
+      "path": "squared/gui/batch_painter.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "d78458b67dbf1054fbbe44be8ea6513c6aa99dc9c64686e5ca3d6511f3cc0cb4"
+    },
+    {
+      "path": "squared/gui/button.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "9294c386503cf1f03b55f51876467fc994f9ff3370d9693d5ff70b494474b083"
+    },
+    {
+      "path": "squared/gui/button_group.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "dc161d57c2eeb90cbe465793dcdc9cb26b3742cabd72e5bc2f42ce572bef8f38"
+    },
+    {
+      "path": "squared/gui/cell.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "8828729b91ad8b41a286b967c1e8c3aeb7d0e122885b192692a59f1b6341e475"
+    },
+    {
+      "path": "squared/gui/check_box.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "abdca320e0d66a8822e627463891c54b7a78195318b95c9ebc70768485f560db"
+    },
+    {
+      "path": "squared/gui/dialog.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "c38d1646217ff312f30599ea7358f0f69917e0194d17e6b84556573ee46c9ae4"
+    },
+    {
+      "path": "squared/gui/group.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "6d616e4e269dc80ab37e89efe74698042a427d28ce31e039a97a2dba22823fb2"
+    },
+    {
+      "path": "squared/gui/gui.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "8d5b7c71e827aca5ab5d7b7a551a6a06d29b5294e2d691686de6560d77ec7a0a"
+    },
+    {
+      "path": "squared/gui/image.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "3e2647d888707cd68d9f618df3f3e2e747b7f1214929701fe9b7d1ffb104aca6"
+    },
+    {
+      "path": "squared/gui/input.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "639981abd7fde9b7c66d37e10fc4dc7cf98afe0c0a12e5c5f3a7d2c8805bd44b"
+    },
+    {
+      "path": "squared/gui/label.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "ed37a27adc0a38f9ad3ece0cb1cbe0f818ae419e2705f7d46916fd0f99c3a1cd"
+    },
+    {
+      "path": "squared/gui/linear_layout.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "fba3a0bf577d0788750affb7d06d04affd4185dbecc28ebb597d242dbf7f369e"
+    },
+    {
+      "path": "squared/gui/margin_container.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "f2d87077eea35069740b476f412462fdcb85fc66ebed0ab3b52b9609f34fc000"
+    },
+    {
+      "path": "squared/gui/panel.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "a84f54b76585bb0e053294f826c83018453b78e6112df7bd9f3004081a96d76c"
+    },
+    {
+      "path": "squared/gui/progress_bar.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "85933dc8f6f79245cedbc02e2731f73b961f3f75fe79f598dba654a63f4b6d45"
+    },
+    {
+      "path": "squared/gui/radio_button.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "59e17a892ebb09b93e95172c982ac03b906c7739a03e486911d4cbb75d89328c"
+    },
+    {
+      "path": "squared/gui/scroll_pane.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "6b9da36551ea2b52e21fab88b1917dd4208052a16b6f0f80a07ef5f62459aa46"
+    },
+    {
+      "path": "squared/gui/separator.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "61e4055e3cbb16278a3521ff0c3d480c469405dbb3fc16fbb41e37021c7dad99"
+    },
+    {
+      "path": "squared/gui/skin.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "48e2be229a720d3c6c7c42c7b112579f1bfe1d7669876abd763785bfe1cefaa6"
+    },
+    {
+      "path": "squared/gui/skin_loader.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "66f33b4b1603cf4842361f445d41be743a363db66b6baf0e97f8f4402c0f50de"
+    },
+    {
+      "path": "squared/gui/slider.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "96b2277379c303fe0c01a7877e695f90ea1fb55f92c08ff2c96d727e914efdcc"
+    },
+    {
+      "path": "squared/gui/src/actor.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "437c68129d5a3245f5fdf5b5dfb0eb1558d4c8bbef38ed03be1b73b6ee31829f"
+    },
+    {
+      "path": "squared/gui/src/actor_interface_id.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "3a8836846089cf848dfbaeb406c77c39f0f0b75bcf9793dce9b5f56bf7fd733c"
+    },
+    {
+      "path": "squared/gui/src/alignment.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "5a092c16fe13415f95395d362c3c65be4fe2995c9e173d4067ddb3ec66c20930"
+    },
+    {
+      "path": "squared/gui/src/batch_painter.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "2fc15c60f628ed806a09cd602bb75fd76589cadb7dbd78dabbdd37a276dd967b"
+    },
+    {
+      "path": "squared/gui/src/button.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "1150365b04b0c89d227c60b68c4b9ccfca548378ba47754e76d85c59d9976c04"
+    },
+    {
+      "path": "squared/gui/src/button_group.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "0fd8fc0a7370c62c91227a8ab13aab9b598432eeb7c16bc12993ef860ae4f93f"
+    },
+    {
+      "path": "squared/gui/src/button_style.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "68b4556064324c73df38eb6b33e130407928929fd2a60d0a293fad17e471fe5e"
+    },
+    {
+      "path": "squared/gui/src/cell.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "1781bc78840e3cbbeae0c8b5b03c90ac288711647bef7314362c5262e5428ed0"
+    },
+    {
+      "path": "squared/gui/src/check_box.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "fcf7c77d145107510f76afa4a09b6121fb83ba9968cdfa1271941c35a84914db"
+    },
+    {
+      "path": "squared/gui/src/check_box_style.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "daf6d4f9ddde7bcc604e6cba9d5cbe1574f6ff2f1d8456d32a2041c4ddb95480"
+    },
+    {
+      "path": "squared/gui/src/color_drawable.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "1f522c83398b1074deec22031d55be7ce8039573f0e19f35ebcf1b35383de8de"
+    },
+    {
+      "path": "squared/gui/src/color_drawable.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "18953f141f755f660c1273d2ea3429d63263cab82c85f7b5c8ba5e38ed3a8489"
+    },
+    {
+      "path": "squared/gui/src/detail/gui_detail.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "225edbc29d2faaae0a61aacbe63abff306cda4e4fc37aba19c5df4f22a57c24d"
+    },
+    {
+      "path": "squared/gui/src/dialog.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "254e494cf09085c2326a4e3f4188b4063cf1b1937c813ed8ce82983ffb37f00b"
+    },
+    {
+      "path": "squared/gui/src/direction.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "06419606dd25a80fe16ad4c2f28113023f7bf145ce1d2219ea886126b7fb36a7"
+    },
+    {
+      "path": "squared/gui/src/drawable.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "e973b5ae636924a57940c68941048334f201ccfe7cb537892f53903a5b16c512"
+    },
+    {
+      "path": "squared/gui/src/drawable_ptr.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "e59a487a75c525aeec1f65632d38eddbe5326563074483d79ddfcf66681b6bc0"
+    },
+    {
+      "path": "squared/gui/src/font_ptr.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "699ad326a24cdf6303a8525ce96a2c798e541004b242ff98da8326ea556324eb"
+    },
+    {
+      "path": "squared/gui/src/font_resource.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "14b54491c5c13b74a902e4e7482ff30d5b409d78774f9730c70c3023559bfec9"
+    },
+    {
+      "path": "squared/gui/src/font_resource.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "7f269c0e3c4b2a2d2ceb127a1d397a754fd24ab6a00037d4f961a0e9a141536f"
+    },
+    {
+      "path": "squared/gui/src/group.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "36b64641e307e97b328acbda68a2d7a77678a6644ec9139731ed326ea2215fb3"
+    },
+    {
+      "path": "squared/gui/src/image.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "5839edb70bd47140262fc39c138504c26ed84ca18069f789bcc0ecd13cfee61d"
+    },
+    {
+      "path": "squared/gui/src/input_event.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "1b663c3225b3124a404bd8856ff258ffce3a24210b1c0b85c032787ef6e7c99e"
+    },
+    {
+      "path": "squared/gui/src/input_event.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "540b3dac98710700dcda94c61e05791800b91034587bb8a66d792630e9d45647"
+    },
+    {
+      "path": "squared/gui/src/input_key.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "5ea6fd32715c7c70f2279263d913a4e47b7bbc3af7f8d20f6b6fa4114d943ed7"
+    },
+    {
+      "path": "squared/gui/src/input_listener.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "74cd6aa27f84c16d2693e2db326b728ffbde039cefbe52f21d3f506d2d872523"
+    },
+    {
+      "path": "squared/gui/src/input_listener_id.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "3f0d056c6f82631062b8a18f266ff6d23587e3fe44227b4869a1484b2a4f53aa"
+    },
+    {
+      "path": "squared/gui/src/input_modifiers.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "8ab726f1ca367f9e8958241c4617c4ba5c7dc1af783cb4b367af20b82dfb742b"
+    },
+    {
+      "path": "squared/gui/src/input_phase.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "6ff5294c897b6de953912a847887e4fab4f224d22112d89b3df8d452c3ea299f"
+    },
+    {
+      "path": "squared/gui/src/input_type.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "4b805885b2389a0d1ef6d5c163dfb1731a95f8adf1c3eac5149339e42300eaf8"
+    },
+    {
+      "path": "squared/gui/src/insets.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "b92e84013ab7344efb779b6f0380c4f12fa7c64a2b5c8531e88310731dc75bac"
+    },
+    {
+      "path": "squared/gui/src/key.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "7cfc090db70137565b9565b98fdd71118abcbeb00c953a36f1590a11232fbb12"
+    },
+    {
+      "path": "squared/gui/src/key_modifiers.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "2cd130ca96e25a2af17f48d2c3c69019eb3c66446e87e1eae2f8e0048786a200"
+    },
+    {
+      "path": "squared/gui/src/label.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "814a8c4706f36d773de9aad7a1ee26d1c3b6d406df3f0d0785f7a6a6ecc7dfb1"
+    },
+    {
+      "path": "squared/gui/src/label_style.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "bec22a543d4f5dd3ef551c35460feb98535f1ba81b9e929c16d24c97216c43d4"
+    },
+    {
+      "path": "squared/gui/src/linear_layout.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "9d550835bd78f4fd2d2f0f34dc1f372301be90380f2882b5051c377b0da8c8f0"
+    },
+    {
+      "path": "squared/gui/src/margin_container.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "f3f10d3e73f67af8019008a05adf571ad387e3d3d33fb6a95af3cd4b77bc6a9e"
+    },
+    {
+      "path": "squared/gui/src/navigation_action.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "4cd3955dac162f7c3cdecce2125868a95cbb5e1f6ebb2876e67a5e9ef4a2f036"
+    },
+    {
+      "path": "squared/gui/src/nine_patch_drawable.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "ee6ab6f46ff9be6c18ea1224733002461261eb51d38cf38bff4edb6560b6119b"
+    },
+    {
+      "path": "squared/gui/src/nine_patch_drawable.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "4674d8d6ae0dfd19f694bd1943ec01dc1f29e5238e2f8b92a1a09582830dea12"
+    },
+    {
+      "path": "squared/gui/src/nine_patch_splits.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "947f23724f867fe1617cf8492d4003711d7497a9e3d5d51c8e508e096f026558"
+    },
+    {
+      "path": "squared/gui/src/painter.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "5f01c8741d3cf2f05443e14902a2672b75890e641c11f75ad3d54c9839d07e87"
+    },
+    {
+      "path": "squared/gui/src/painter.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "342aae89f78b2dcc45d3d43dba370ceab16a3c81df5f0ca3d8b6f54ec649c593"
+    },
+    {
+      "path": "squared/gui/src/panel.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "5bad2bf4233955eec5d16f9156d0536f7ec57b971cfa37d0d2576a20133e8310"
+    },
+    {
+      "path": "squared/gui/src/panel_style.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "5b36bc6bee9e9871671bf13735a22a8921282168b9417740940683c2d01397fa"
+    },
+    {
+      "path": "squared/gui/src/pointer_action.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "fde4a8ac0ced79f3f5d1426479adef965aa946fd37bac30dbd6280a967e74176"
+    },
+    {
+      "path": "squared/gui/src/pointer_event.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "115e49c7fe05de0a01558e3431be66cb844764ebc940d29ec32756cdd4092806"
+    },
+    {
+      "path": "squared/gui/src/progress_bar.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "42dfbe5aaecc42c480b232e2b0f17fa59b2435c6fe057c4919bd4cfb160154af"
+    },
+    {
+      "path": "squared/gui/src/progress_bar_style.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "3e85f56b7a278ac4410cd696aec15ef93606d598cc9afe1e39ac3ba234208d8d"
+    },
+    {
+      "path": "squared/gui/src/radio_button.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "7a9b342c0dd2858aa6cb67347d4f7c38cb8c951d0e41cee3d50a848c31228e1f"
+    },
+    {
+      "path": "squared/gui/src/rectangle.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "55feed6e8d729cc47092f26317bdd0d874d82c5fbdcc2df47eed4c0239d41b55"
+    },
+    {
+      "path": "squared/gui/src/region_drawable.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "50ecaf2b661f2f860664e2d70ea5d25f94ffb4e92f20d6de4133c1d277497da2"
+    },
+    {
+      "path": "squared/gui/src/region_drawable.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "b30c5aa1cebeba4e74f70b29090723ea15076b1572e8e02924eb325dd86b48be"
+    },
+    {
+      "path": "squared/gui/src/scroll_pane.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "2c6a92532c592c01293e241bb3f44ae6b1cc5e58414858bb5bfca13e1e528fa3"
+    },
+    {
+      "path": "squared/gui/src/separator.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "e94e0be506a4c0922f12c034b18c3cc1b06cc68070a4e501e883d739537b0c29"
+    },
+    {
+      "path": "squared/gui/src/size.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "618980157837579c68a1ed91119433696e7df780e95249133887e90b9dcbc891"
+    },
+    {
+      "path": "squared/gui/src/size_hints.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "b13f675ddfc15feba508eb79d5be7b2584085fa7518901e3186eb612932043ff"
+    },
+    {
+      "path": "squared/gui/src/skin.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "53510390b20ad8e2b576f81fdaa78c31ada148ea95b41ba8960fe576a77d5760"
+    },
+    {
+      "path": "squared/gui/src/skin_atlas_resolver.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "d24c30faddaf6059a20655f27906094151ec4c571f0b197773e518ce076b55a6"
+    },
+    {
+      "path": "squared/gui/src/skin_drawable_resolver.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "fc05c3d88f585aa283b6c36381508b9f30dda0327de29ec652b85014b9d7e16a"
+    },
+    {
+      "path": "squared/gui/src/skin_font_resolver.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "582d7f4369f463a7360047c31a4bdff75295ac5419eef014fb6889d91dafc5cc"
+    },
+    {
+      "path": "squared/gui/src/skin_load_issue.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "dd2c16b6c0a10c2b0e1bec2ade895e3e4640958f31681d984c63993868d6855b"
+    },
+    {
+      "path": "squared/gui/src/skin_load_limits.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "f44a138ab87f520e32eb947b02fe12236ac84c86953c86f5daf0a73bc58cc173"
+    },
+    {
+      "path": "squared/gui/src/skin_load_report.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "85760b2bfc2ea7e8e39e1c2332b5243b7a219da9393f5f73196f19cf0d5ce7e0"
+    },
+    {
+      "path": "squared/gui/src/skin_load_severity.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "411fca9925b83f9cbbe337f85ad8d225c3c62393b4c429955ecb411db4e0be56"
+    },
+    {
+      "path": "squared/gui/src/skin_loader.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "5985b6f19d508987b044b46bc1164382be2c4b958a661164c2e4c084bcbf34d5"
+    },
+    {
+      "path": "squared/gui/src/slider.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "ba58ea01245f5dc8aabe93bc37bf1b5accbce7a5a0b22e0e791d30f649c6663e"
+    },
+    {
+      "path": "squared/gui/src/slider_style.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "8a258cff336aa9689a91e8b23841304b2463fe706e609600170d72167dade10f"
+    },
+    {
+      "path": "squared/gui/src/stack.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "fb936811dd0e59548d8d6dfcd2818249ec23a84d4e7e39b2bfe17d3560ca835a"
+    },
+    {
+      "path": "squared/gui/src/stage.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "ec8a3a28ce5d520a8d7ef9c9ac4152070c2de677f989cd90f95598324ebd49ea"
+    },
+    {
+      "path": "squared/gui/src/table.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "275e831f85cd8d0860f3da4ba5dba8019efa65033af2a64fad5dc5b55aa080bb"
+    },
+    {
+      "path": "squared/gui/src/text_field.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "73bb8d765e15b8f476323def3951ec1f6c7d090f2f43a340fba066bbefa90d72"
+    },
+    {
+      "path": "squared/gui/src/text_field_style.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "d31c68b4d9cb1734e9b27f33fadeed4669267289c1b74dd9c44ac4e7490b1a77"
+    },
+    {
+      "path": "squared/gui/src/toggle_button.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "141becaba047671e9cf0737f37005719cbad1b32ae837596994b93d050c6664f"
+    },
+    {
+      "path": "squared/gui/src/tooltip_config.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "a571a0ec89b151b6df379ee5d69da5a2cf042889910836995f6ef997084c0f1d"
+    },
+    {
+      "path": "squared/gui/src/ui.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "884516087552ccf30ca57d1667d56625e346ffebac50b55d92539d2976bb67df"
+    },
+    {
+      "path": "squared/gui/src/widget.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "d496cc47ac13d272d498e87671916c6aab8c901479dc4f2ec75cd9887fd785f1"
+    },
+    {
+      "path": "squared/gui/src/window.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "c622a34b0f17743484b8ed5ffd02b951edb5c8ba739b682a2c5c99d35f14dd5c"
+    },
+    {
+      "path": "squared/gui/src/window_style.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "fb0a1258472e5e83263057234555e1f4d1664d2ea9e36f0a7b6614533e84f49d"
+    },
+    {
+      "path": "squared/gui/stack.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "a7f69531de308ce96c2d99cdbf852b4ca49fd0f5e659c4772878998a877725d0"
+    },
+    {
+      "path": "squared/gui/stage.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "bb039926666ace49809beb53e7161837b1fff41fd7ed38053b312a062aa6fd53"
+    },
+    {
+      "path": "squared/gui/table.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "bbd3364bafe3610f45203f4c064a7a2ef3706c71eae2ca1f35a6d3474a98037f"
+    },
+    {
+      "path": "squared/gui/test/batch_painter_test.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "581f30cd5fe1cf7d6e8bea7acbfd19fcf0fd496696bff70e81b22e5449509c2a"
+    },
+    {
+      "path": "squared/gui/test/skin_spike.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "2c5028215a1760ce2c31f8b28f40171149e8943c86612cc1cd6f238f189d7d4d"
+    },
+    {
+      "path": "squared/gui/text_field.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "e45fc618f23349484364efe4d7a806bfe95568ffcea22b68334a7a3642ee3c9e"
+    },
+    {
+      "path": "squared/gui/toggle_button.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "fe467708c33a725a413aae368469fb5186e3819a36240603cfc342e3ae2d7f31"
+    },
+    {
+      "path": "squared/gui/ui.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "ec6902e3526f0895f76556e09ba869b34b2f94cf882682951fcb5bdf04fd1b27"
+    },
+    {
+      "path": "squared/gui/widget.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "5eb908cb45d70cf9a77e489f0e0db4743be8b8b473d69c6c4b9c14777ce415b2"
+    },
+    {
+      "path": "squared/gui/window.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "146467f9157fcfc8705231d0c687472a166868e5e0fb338d921b84fd2a91561d"
+    },
+    {
+      "path": "squared/math/Makefile",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "c3b8f8572970da7f92ba6bab950cb71374bef93d4ccd74d18fa2ef959c3c5a89"
+    },
+    {
+      "path": "squared/math/math.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "81930ccb93bd4baefa8048a85626e406d10f724e477d0eb0803a9862ff51d6c4"
+    },
+    {
+      "path": "squared/math/matrix4.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "626cf26797cffe75f09e8815f112c508f993882d14b2df73d4c20d526e9ab4fa"
+    },
+    {
+      "path": "squared/math/src/matrix4.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "665720b74afa69f285c32b856e16526b9f92ee6b51c730e0d3f6393e88bbdb4b"
+    },
+    {
+      "path": "squared/math/vector2.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "5394f3469210bd5cdc2d2d5040d8c91a3feb79f24366d3a09888a280a0709d3a"
+    },
+    {
+      "path": "squared/messaging/Makefile",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "3b8da81ee64221bfa87212dfc74ee8cac341a523d5bf74211b9a5f400403cfc1"
+    },
+    {
+      "path": "squared/messaging/message_dispatcher.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "2731cfab51bf7ae164e7b63d0a766276a5e9fcac9303c5a7201d0f510352a2d4"
+    },
+    {
+      "path": "squared/messaging/messaging.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "984d7570f31173811e52e868def6e2fe1d9421ba706b5815fbfcf5afe864d1aa"
+    },
+    {
+      "path": "squared/messaging/src/correlation_id.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "58c332d93745bb442bcfe2b6369db51f7258d3606a902245e7e7462231394890"
+    },
+    {
+      "path": "squared/messaging/src/delivery_report.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "d4bfe9a6f909210baa66930b2d9aef5f91ab207dd9bfaa4b7f842fb059cefbcd"
+    },
+    {
+      "path": "squared/messaging/src/detail/messaging_detail.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "29c5ba865721d0f649094d254664923b846299ae808d28e7d5633862b84b79b8"
+    },
+    {
+      "path": "squared/messaging/src/dispatch_handle.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "e869c41e48ab3d684b32f0771bc7dad54fa1bb668e6bc3960c82f8df0c372a95"
+    },
+    {
+      "path": "squared/messaging/src/dispatch_result.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "1c74570c51da14ba946774d9c5112a04ea06a6d23acdbf28f822bb48d4f9f9d4"
+    },
+    {
+      "path": "squared/messaging/src/dispatch_status.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "e636c12e1e78857125f3e9a5e7660c01cbf1e1241e94a1e8aceb39b80d2adcdb"
+    },
+    {
+      "path": "squared/messaging/src/endpoint_id.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "f73e2344b6e992c27103dad6cff289f64a2a860ece06055ab2ae570cdf017290"
+    },
+    {
+      "path": "squared/messaging/src/endpoint_id.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "b14649c6808228ef9f79a479a1a6ade34f2e37c478001f013376bf138d19bf07"
+    },
+    {
+      "path": "squared/messaging/src/message_dispatcher.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "c63a4aad9929a2a58d3044523f33d976bed395cc634927b2133283c33119ddc6"
+    },
+    {
+      "path": "squared/messaging/src/message_dispatcher_config.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "9a03cb7f15647ae9c54336d2123cd1a9bc06c60a05df7ffc9d7f8237aceb6b71"
+    },
+    {
+      "path": "squared/messaging/src/message_id.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "648f44a8aad2c022fa4a032e1705ca1db1182c988a989d2d58a0367e93f635f4"
+    },
+    {
+      "path": "squared/messaging/src/message_id.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "8754e3126329b5ea4b976ba6e0a21e805d535b6bed294ff4c312ad994ff5260c"
+    },
+    {
+      "path": "squared/messaging/src/pending_message_view.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "5a03ccd489c31dc18a277c6589d23c65ee20d2cf2a96e19037b176759521af07"
+    },
+    {
+      "path": "squared/messaging/src/pending_restore_result.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "ad6cb156ab1948709238ebc3aa8c1d55746dd8a7de7bf4a0fb80892b4877205c"
+    },
+    {
+      "path": "squared/messaging/src/pending_restore_status.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "43ceb307fa52aa0c27c2719f788aae94673c16edec6c3b74140d50910366c6ea"
+    },
+    {
+      "path": "squared/messaging/src/pending_snapshot_result.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "927869a57b1a87c593674ca774ce08195b93fc89e85d37b973ce58b20af7af87"
+    },
+    {
+      "path": "squared/messaging/src/pending_snapshot_status.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "6ff48e6e9b2f55c17c1096172928e3657e8addeef1147f035fc525b12bd1902f"
+    },
+    {
+      "path": "squared/messaging/src/provider_result.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "cf3fa8c637f07f282d83dae663afb31c4e8abcee85fe30853c134dcc687cbb04"
+    },
+    {
+      "path": "squared/messaging/src/provider_status.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "09b6b81f2f3f3cf4f1504937d929a18f12196e59c0067f82453e39d4360d2d0f"
+    },
+    {
+      "path": "squared/messaging/src/receipt.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "e3c266db712cf0093a08f2f03a9a62ab8d4c65c8ca336cca24256d7589e9c31f"
+    },
+    {
+      "path": "squared/messaging/src/receipt.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "7ff814970723690d9f756a58a39715d2d8c30799a271cdd3e53e4d6199b61c22"
+    },
+    {
+      "path": "squared/messaging/src/receipt_status.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "9c6d057687b1f59829e9e82c4297de2be8cea55b23faa7cf9750ae2684f3b94e"
+    },
+    {
+      "path": "squared/messaging/src/subscription.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "aa12da44bb18c31eb5d782180264b8579d7df7db637af7755646fb9700350fc4"
+    },
+    {
+      "path": "squared/messaging/src/subscription_result.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "425179e5aea34ec0b12d29a1ca923f5450bb550da11e7cf12388127038bbb046"
+    },
+    {
+      "path": "squared/messaging/src/subscription_status.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "5d09a8bfc05861ad9f1ce63b213ad5161161ff0f88e2be68edc6a4b1c98cec15"
+    },
+    {
+      "path": "squared/messaging/src/telegram.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "aa6e432db32818d5700d2999c2b5107be96bbee6095a8f125d46f6ea869966b3"
+    },
+    {
+      "path": "squared/messaging/src/telegram_provider.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "3c35ccf41a751c632269ad647bed436c7a40ae7517367c46f9e183ae9c841083"
+    },
+    {
+      "path": "squared/messaging/subscription.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "63cf8f0a03877df22a5b1c637c3df9b19a6b688bc74da2df5084f83fef0d0a8b"
+    },
+    {
+      "path": "squared/messaging/telegram.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "9a9cd239a880f6c012e31c64c1a3b9f92b30687589463529ce932047edf71a0b"
+    },
+    {
+      "path": "squared/messaging/telegraph.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "39cb68138beeb3ec21838f02f71c2a7a4c7e90bc381e661e1e30b430ede21062"
+    },
+    {
+      "path": "squared/third_party/stb/stb_image.h",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "594c2fe35d49488b4382dbfaec8f98366defca819d916ac95becf3e75f4200b3"
+    },
+    {
+      "path": "squared/third_party/stb/stb_image_impl.c",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "f7642a554688ffbb2d40a891357baa94a1ea938c8f0116965b7845a08f1d8eaa"
+    },
+    {
+      "path": "squared/third_party/stb/stb_image_write.h",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "cbd5f0ad7a9cf4468affb36354a1d2338034f2c12473cf1a8e32053cb6914a05"
+    },
+    {
+      "path": "squared/third_party/yyjson/LICENSE",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "45e384d3d52c73cba3a64d6e6c25d47cd738cd8a55c30629e3201046eda62947"
+    },
+    {
+      "path": "squared/third_party/yyjson/yyjson.c",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "ac2e9bbb2e2d9149d90878d40506a1d624fa0b33c979a11b61075c54782c6d6a"
+    },
+    {
+      "path": "squared/third_party/yyjson/yyjson.h",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "175867c5493a5df648cec566717fa1c29aa2f6096f5f0cf1efad0b65e1f6d7b3"
+    },
+    {
+      "path": "squared/time/Makefile",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "4235b5b3486aa32358bb5d859c83d2679c49bcd0317de1fddb929f01332b18e8"
+    },
+    {
+      "path": "squared/time/clock.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "2ef5cbe272b5ec4544a4f19b89e81da2b2a5b4846b6ef24e0b7beecf216abe1c"
+    },
+    {
+      "path": "squared/time/duration.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "fd2d467760916e085cc31f36f5102d20686848128827c7c35e6e726dc643dd14"
+    },
+    {
+      "path": "squared/time/manual_timepiece.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "f10b1a666194ddadf60f49dac715950bb0863e4439b460baed57bafa4ac6d3b7"
+    },
+    {
+      "path": "squared/time/src/deadline_queue.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "eb069022dcb20eb29c2fe9e9cabeec2d9c5875f7dc2cc80487348eeeafac8218"
+    },
+    {
+      "path": "squared/time/src/manual_timepiece.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "f1281ce8f6074dfb6dae4e3fddc1471a4bbc8896af58474fcad4aad9f747d43e"
+    },
+    {
+      "path": "squared/time/src/timepiece.cpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "366868663ac7caeb8c7c4bbf9a2736ff12bcf9a9479bbc02b529f852afe8aecc"
+    },
+    {
+      "path": "squared/time/time.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "8d3664d3ab5f203b574020c7f02ab4f280635508c03b16a9c87bbc91c700d870"
+    },
+    {
+      "path": "squared/time/time_point.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "0090a0794d7422c1181df9d92b87e7afc9dfec04b746e2531bf9cdc5ac64dacf"
+    },
+    {
+      "path": "squared/time/timepiece.hpp",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "ad246a270e396d89013d5fe13d835356febe1fb61b81818355e34e22a00ceb82"
+    },
+    {
+      "path": "squared/tools/build.sh",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "c315446159d23c93fbf79f88e4843420760cfdf1a72182b9adfa8099459bdecc"
+    },
+    {
+      "path": "squared/tools/check_headers.sh",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "629171100a3025fa762fa3a6e742741806f331a42ade0955516d4cc51bf8308e"
+    },
+    {
+      "path": "squared/tools/measure_sizes.sh",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "8382b3baffdc41d09cc2ca8f30623117917f775a961e866db01773c89d224ff2"
+    },
+    {
+      "path": "squared/tools/vendor_third_party.sh",
+      "ownership": "shared",
+      "origin": "package.squared-core",
+      "origin_version": "1.0.0",
+      "phase": "package.materialize",
+      "sha256": "bf8fa34522303afe8b15774b160078ddf8eab4e79d54036c8be6a42511f622c7"
+    }
+  ],
+  "durability": "durable"
+}
