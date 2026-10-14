@@ -18,6 +18,8 @@ documentation is in [../programmer/README.md](../programmer/README.md).
 - [Build and toolchain](build-and-toolchain.md)
 - [Code style](code-style.md) &mdash; CDDA's formatting rules, as
   `squared/.clang-format`, and where squared differs
+- [Lint](lint.md) &mdash; `make lint`: clang-tidy, the source rules and their
+  baseline, and the planned frame-allocation counter
 - [Refactor notes](refactor-notes.md) &mdash; how the split was done and how it
   was verified (history: written before the Sprint 1 layout move)
 - [Tools](tools.md) &mdash; the scripts in `squared/tools/` and the workspace
@@ -28,7 +30,7 @@ documentation is in [../programmer/README.md](../programmer/README.md).
 - [app](app.md)
 - [assets](assets.md)
 - [data](data.md)
-- [dev](dev.md) &mdash; loopback log sink and crash reporter (development only)
+- [dev](dev.md) &mdash; loopback log sink, crash reporter and frame-allocation counter (development only)
 - [files](files.md)
   - [asset-index](asset-index.md) &mdash; how nested APK assets are listed
 - [gles](gles.md)
