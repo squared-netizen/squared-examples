@@ -7,7 +7,6 @@
 #include <squared/files/src/file_text_result.hpp>
 #include <squared/graphics/atlas_region.hpp>
 #include <squared/graphics/bitmap_font.hpp>
-#include <squared/graphics/src/bitmap_font_error.hpp>
 #include <squared/graphics/src/bitmap_font_page.hpp>
 #include <squared/graphics/src/coordinate_origin.hpp>
 #include <squared/graphics/texture_region.hpp>
@@ -54,9 +53,9 @@ bool Services::load_font(
     }
 
     sq::graphics::BitmapFont font;
-    sq::graphics::BitmapFontError error;
-    if (!font.load(text.text, error)) {
-        failure_reason_ = "default.fnt: " + error.message;
+    if (const auto error = font.load(text.text)) {
+        failure_reason_ = "default.fnt line " + std::to_string(error.line) + ": " +
+                          error.message + " " + error.field;
         return false;
     }
 
