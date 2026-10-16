@@ -116,7 +116,7 @@ sq::app::Event cancel_event()
 {
     sq::app::Event event;
     event.type = sq::app::Event::Type::NavigationInput;
-    event.navigation = sq::app::Event::Navigation::cancel;
+    event.navigation = sq::app::Navigation::cancel;
     return event;
 }
 

@@ -197,7 +197,7 @@ bool ScreenStack::handle_event(const sq::app::Event& event)
     // twice for one press, so the stack ignores cancel and acts only on
     // BackRequested.
     if (event.type == Type::NavigationInput &&
-        event.navigation == sq::app::Event::Navigation::cancel) {
+        event.navigation == sq::app::Navigation::cancel) {
         return false;
     }
     return false;
