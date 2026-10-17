@@ -23,14 +23,26 @@ The renderer include is guarded, so this file compiles with no kit at all.
 That guard is what makes `kit.opengl` and a future `kit.sfml` alternatives
 rather than one of them being baked in.
 
+**What the device lacks is decided from its API level**, read once at start
+from the configuration NativeActivity already holds
+(`AConfiguration_getSdkVersion`) and logged as `device: API <n>`; the GL
+driver is logged once as `driver: <version>; <renderer>; <vendor>` when the
+first context is current. Both reach logcat (`adb logcat -s <tag>`), which is
+how a device without Termux is read. Below API 23 the safe-area query is
+skipped: the bars sit outside the window there, and the Java method it calls
+does not exist. Each such check costs a comparison, cheaper than reading a
+cached answer from storage, so nothing is cached.
+
 ## `AndroidManifest.xml`
 
 Two deliberate absences:
 
 **No `<uses-sdk>`.** `minSdkVersion` and `targetSdkVersion` are passed to
-`aapt2` by the build, so `make apk SQ_MIN_SDK=21` retargets without editing a
+`aapt2` by the build, so `make apk SQ_MIN_SDK=26` retargets without editing a
 file. Declaring them here too would create two sources of truth, and aapt2
-would take this one.
+would take this one. `SQ_MIN_SDK` (default 22) is also what the code is
+compiled and linked for, so the manifest cannot claim a level the library was
+not built for.
 
 **No `android:debuggable`.** Set by the build for debug APKs. Committing it
 would ship a debuggable release.
