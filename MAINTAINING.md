@@ -35,6 +35,15 @@ The tools enforce it:
 `vendor_framework.sh` copies only committed package code (`git archive` of a
 commit), so a fix must be committed to the package before an example can have it.
 
+It writes only what changed: files the commit holds unchanged are left as
+they are, timestamps included, and the framework's build output
+(`squared/build/release`, `build/debug`) is kept, so the next `make` rebuilds
+only what depends on the changed files. Written files get the current time;
+files the commit dropped are removed. Replaced and removed files are backed up
+to `~/.cache/squared-template-backups/<stamp>/<example>/squared/`, and only
+those (before 2026-10-19 the whole tree moved there, build output and all, on
+every run).
+
 Copying is the same as generating only because the framework needs no
 substitution: it holds no `{{placeholders}}`. `vendor_framework.sh` checks that
 on every run. If it ever stops holding, examples must be refreshed through

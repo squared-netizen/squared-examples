@@ -25,6 +25,14 @@
 # It also updates <example>/mk/pkg_squared_core.mk, which the package owns, and
 # writes <example>/SQUARED_REV. Commit both, with squared/, in the example.
 #
+# Only what changed is written (since 2026-10-19). A file the commit holds
+# unchanged is left alone, timestamp and all; a changed or new file is written
+# with the current time; a file the commit no longer has is removed. The
+# framework's build output (squared/build/release, build/debug) is kept. So
+# the next `make` rebuilds only what depends on the files that changed,
+# instead of the whole framework and every application file that includes it.
+# Each replaced or removed file is backed up first, and only those.
+#
 # Runs from anywhere: the repo is found from this script's own path.
 set -euo pipefail
 
@@ -73,6 +81,46 @@ fw_files() {
 }
 
 STAMP=$(date +%Y%m%d-%H%M%S)-$$
+
+# sync_tree <from> <to> <backup dir>: make <to> hold exactly <from>'s files
+# (build output aside), writing only those that differ. Prints the counts.
+sync_tree() {
+  local from=$1 to=$2 backup=$3 f changed=0 added=0 removed=0 kept=0
+  fw_files "$from" >"$TMP/new"
+  fw_files "$to" >"$TMP/old"
+  while IFS= read -r f; do
+    if [ -f "$to/$f" ] && cmp -s "$from/$f" "$to/$f"; then
+      kept=$((kept + 1))
+      continue
+    fi
+    if [ -f "$to/$f" ]; then
+      changed=$((changed + 1))
+      mkdir -p "$(dirname "$backup/$f")"
+      cp -p "$to/$f" "$backup/$f"
+    else
+      added=$((added + 1))
+    fi
+    mkdir -p "$(dirname "$to/$f")"
+    rm -f "$to/$f"
+    # Not cp -p: git archive dates every file at its commit, which can be
+    # older than the objects built from the previous version, and make would
+    # then keep them. A written file is new now.
+    cp "$from/$f" "$to/$f"
+    if [ -x "$from/$f" ]; then chmod 755 "$to/$f"; else chmod 644 "$to/$f"; fi
+  done <"$TMP/new"
+  while IFS= read -r f; do
+    removed=$((removed + 1))
+    mkdir -p "$(dirname "$backup/$f")"
+    mv "$to/$f" "$backup/$f"
+  done < <(LC_ALL=C comm -13 "$TMP/new" "$TMP/old")
+  # Directories the removals emptied, never the build output.
+  find "$to" \( -path "$to/build/release" -o -path "$to/build/debug" \) -prune -o \
+    -type d -empty -print 2>/dev/null | LC_ALL=C sort -r | while IFS= read -r d; do
+    [ "$d" = "$to" ] || rmdir "$d" 2>/dev/null || true
+  done
+  echo "  squared/: $changed changed, $added new, $removed removed, $kept unchanged (left as they were; build output kept)"
+  [ $((changed + removed)) = 0 ] || echo "  replaced and removed files backed up to ${backup#"$HOME"/}"
+}
 TMP=$(mktemp -d "${TMPDIR:-/tmp}/sqvendor.XXXXXX")
 trap 'rm -rf "$TMP"' EXIT
 
@@ -141,13 +189,11 @@ for ex in "${examples[@]}"; do
   else
     echo "  squared/ <- package $short$([ -n "$current" ] && [ "$current" != "$rev" ] && echo " (was ${current:0:7})")"
     if [ "$DRY" = 0 ]; then
-      if [ -e "$dir/squared" ]; then
-        b=$HOME/.cache/squared-template-backups/$STAMP/$ex
-        mkdir -p "$b"
-        mv "$dir/squared" "$b/squared"
-        echo "  previous squared/ moved to ${b#"$HOME"/}/squared"
+      if [ -d "$dir/squared" ]; then
+        sync_tree "$TMP/x/$TREE/squared" "$dir/squared" "$HOME/.cache/squared-template-backups/$STAMP/$ex/squared"
+      else
+        mv "$TMP/x/$TREE/squared" "$dir/squared"
       fi
-      mv "$TMP/x/$TREE/squared" "$dir/squared"
     fi
   fi
 
