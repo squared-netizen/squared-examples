@@ -1,0 +1,48 @@
+# squared &mdash; developer documentation
+
+For people maintaining and extending squared. Programmer-facing API
+documentation is in [../programmer/README.md](../programmer/README.md).
+
+## Cross-cutting
+
+- [File layout](file-layout.md) &mdash; where files go in a module, the
+  one-type-per-file rule and the self-containment invariant
+- [Memory profile](memory-profile.md) &mdash; measured `sizeof` of every core
+  type, and what allocates
+- [Priority audit](priority-audit.md) &mdash; where the tree contradicts the
+  project's own priority order
+- [Standard library deviations](standard-library-deviations.md)
+- [Extension policy](extension-policy.md) &mdash; why squared adds fewer
+  extension points than a linked library would, and what that obliges
+- [Design patterns](design-patterns.md)
+- [Build and toolchain](build-and-toolchain.md)
+- [Code style](code-style.md) &mdash; CDDA's formatting rules, as
+  `squared/.clang-format`, and where squared differs
+- [API reference](../reference/README.md) &mdash; made from the public
+  headers' comments by `tools/docs.sh` ([tools.md](tools.md#docssh))
+- [Lint](lint.md) &mdash; `make lint`: clang-tidy, the source rules and their
+  baseline, and the planned frame-allocation counter
+- [Refactor notes](refactor-notes.md) &mdash; how the split was done and how it
+  was verified (history: written before the Sprint 1 layout move)
+- [Tools](tools.md) &mdash; the scripts in `squared/tools/` and the workspace
+  wrappers
+- [Shims](shims.md) &mdash; the generated classes Android calls into, and
+  `dexgen`, which writes them without a Java toolchain
+
+## Modules
+
+- [app](app.md)
+- [assets](assets.md)
+- [console](console.md) &mdash; the Console (Sprint 4): where it lives, its sizes, the built-in commands, the font, layout and renderer, the template's hook, the scrollback ring
+- [data](data.md)
+- [dev](dev.md) &mdash; loopback log sink and its listener, crash reporter and frame-allocation counter (development only)
+- [files](files.md)
+  - [asset-index](asset-index.md) &mdash; how nested APK assets are listed
+- [gles](gles.md)
+- [graphics](graphics.md) &mdash; includes the former `graphics2d`
+- [gui](gui.md) &mdash; includes the former `scene2d`
+  - [layouts](layouts.md) &mdash; the node table, `check`, the writer and `instantiate`; reading layout files and `names.json`; `sqgen` and its app-build wiring: sizes, allocation, patterns, tests
+- [messaging](messaging.md)
+- [stage](stage.md) &mdash; the App and the Stage (Sprint 7.1): lifetimes, a recreated activity and a quit, the model's holder, the stack and its waiting navigations, taps, the weak layout catalog, `Drawing`, sizes, tests
+- [math](math.md)
+- [time](time.md)
