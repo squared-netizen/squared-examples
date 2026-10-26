@@ -3,6 +3,6 @@
   "rows": [
     [ { "type": "label", "text": "Hello" } ],
     [ { "type": "button", "text": "About", "tap": "push about" } ],
-    [ { "type": "button", "text": "Quit", "tap": "quit" } ]
+    [ { "type": "button", "text": "Quit", "tap": "open quit" } ]
   ]
 }

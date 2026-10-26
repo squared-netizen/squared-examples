@@ -1,0 +1,10 @@
+{
+  "note": "A pane, over the screen that opens it (open quit). Modal: the screen dims and takes no taps until it closes (close, or back).",
+  "kind": "pane",
+  "modal": true,
+  "rows": [
+    [ { "type": "label", "text": "Quit?", "span": 2 } ],
+    [ { "type": "button", "text": "Yes", "tap": "quit" },
+      { "type": "button", "text": "No", "tap": "close" } ]
+  ]
+}

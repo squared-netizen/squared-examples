@@ -6,9 +6,10 @@
 // squared_main runs once, when the first window is up: push the first screen
 // here, and start your model with app.run<YourModel>(). A screen is a layout
 // file in sq_app/layouts/, compiled by the build into layouts::<its name>, or a
-// type written in C++, like About below. Its buttons' taps are lines: `push
-// settings`, `back`, `quit`, or a telegram such as `set settings.sound false`,
-// which goes to your model.
+// type written in C++, like About below. A pane is a layout of kind pane, over
+// the screen that opens it, like quit.json. Buttons' taps are lines: `push
+// settings`, `back`, `open quit`, `close`, `quit`, or a telegram such as `set
+// settings.sound false`, which goes to your model.
 
 #include <layouts.hpp>
 #include <squared/squared.hpp>
