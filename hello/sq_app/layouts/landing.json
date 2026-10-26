@@ -2,6 +2,7 @@
   "note": "The first screen. One file per screen; its name is the file's.",
   "rows": [
     [ { "type": "label", "text": "Hello" } ],
+    [ { "type": "button", "text": "About", "tap": "push about" } ],
     [ { "type": "button", "text": "Quit", "tap": "quit" } ]
   ]
 }
