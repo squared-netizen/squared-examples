@@ -16,6 +16,12 @@
 // (settings.json). A "list" shows one of the model's lists, a row on screen at
 // a time (numbers.json). The addresses are in names.json, which the build makes
 // into the keys in names.hpp.
+//
+// What is kept when the app goes to the background: the screens, by the App
+// (which screen, a list's place, an unfinished edit), shown again if Android
+// ends the process meanwhile; and what the model writes in save(), given back
+// to receive() before start() the next time. A quit forgets the screens; the
+// model's save stays.
 
 #include <layouts.hpp>
 #include <names.hpp>
@@ -50,7 +56,7 @@ struct Numbers {
 };
 
 /// The model: it keeps the settings, counts the seconds and holds the list, on
-/// its own thread.
+/// its own thread. Its settings outlive the process: save() writes them.
 /// Each value it states is shown by the widgets bound to it; each set the
 /// widgets send comes to receive, and is stated back.
 struct Hello {
@@ -85,6 +91,14 @@ struct Hello {
                 t.state(names::number_taps, uid, ++numbers.taps[uid]);
             }
         }
+    }
+
+    // After each background(), on the model's thread: the settings, as the
+    // sets the Settings screen sends. They come back to receive() first thing.
+    void save(sq::Save& s)
+    {
+        s.state(names::settings_sound, sound);
+        s.state(names::settings_volume, volume);
     }
 
     void tick(sq::messaging::Telegraph& t, double elapsed)
