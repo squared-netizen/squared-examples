@@ -5,6 +5,7 @@
     [ { "type": "label", "text": "Up for" },
       { "type": "label", "text": "-", "bind": "clock.seconds" } ],
     [ { "type": "button", "text": "Settings", "tap": "push settings", "span": 2 } ],
+    [ { "type": "button", "text": "Numbers", "tap": "push numbers", "span": 2 } ],
     [ { "type": "button", "text": "About", "tap": "push about", "span": 2 } ],
     [ { "type": "button", "text": "Quit", "tap": "open quit", "span": 2 } ]
   ]

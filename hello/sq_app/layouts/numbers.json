@@ -1,0 +1,13 @@
+{
+  "note": "A list of 1,000 rows from the model. Only the rows on screen have widgets, reused as it scrolls; each row's + tells the model which row it is in.",
+  "rows": [
+    [ { "type": "label", "text": "Rows" },
+      { "type": "label", "text": "-", "bind": "numbers.count" } ],
+    [ { "type": "list", "bind": "numbers", "grow": true, "fill": true, "span": 2,
+        "row": { "type": "table", "grow_x": true, "fill_x": true, "rows": [ [
+          { "type": "label", "text": "", "bind": "number.name", "grow_x": true, "align": "start" },
+          { "type": "label", "text": "0", "bind": "number.taps" },
+          { "type": "button", "text": "+", "tap": "do number.tap" } ] ] } } ],
+    [ { "type": "button", "text": "Back", "tap": "back", "span": 2 } ]
+  ]
+}

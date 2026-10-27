@@ -3,7 +3,11 @@
   "names": {
     "settings.sound":  { "type": "bool",   "verbs": ["state", "set"], "note": "Sound on or off" },
     "settings.volume": { "type": "number", "verbs": ["state", "set"], "note": "From 0 to 10" },
-    "clock.seconds":   { "type": "int",    "verbs": ["state"],        "note": "Seconds since the model started" }
+    "clock.seconds":   { "type": "int",    "verbs": ["state"],        "note": "Seconds since the model started" },
+    "numbers":         { "list": "number", "note": "A list of 1,000 rows" },
+    "number.name":     { "type": "text",   "verbs": ["state"], "uid": true, "note": "A row's words" },
+    "number.taps":     { "type": "int",    "verbs": ["state"], "uid": true, "note": "How often its + was tapped" },
+    "number.tap":      {                   "verbs": ["do"],    "uid": true, "note": "Its + was tapped" }
   },
   "screens": ["about"]
 }
