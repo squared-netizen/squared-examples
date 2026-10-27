@@ -18,10 +18,12 @@
 // into the keys in names.hpp.
 //
 // What is kept when the app goes to the background: the screens, by the App
-// (which screen, a list's place, an unfinished edit), shown again if Android
-// ends the process meanwhile; and what the model writes in save(), given back
-// to receive() before start() the next time. A quit forgets the screens; the
-// model's save stays.
+// (which screen, a list's place, an unfinished edit), in what Android keeps
+// for the activity, shown again only if Android ends the process meanwhile;
+// and what the model writes in save(), given back to receive() before start()
+// the next time. A swipe from the recent apps or a quit starts the app fresh
+// at the landing screen; the model's save stays. Back on the landing screen
+// sends the app to the background, as Home does.
 
 #include <layouts.hpp>
 #include <names.hpp>
