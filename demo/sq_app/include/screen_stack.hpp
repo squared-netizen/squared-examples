@@ -5,8 +5,8 @@
 #ifndef demo_SCREEN_STACK_HPP
 #define demo_SCREEN_STACK_HPP
 
+#include <squared/gui/src/detail/ui.hpp>  // internal since 7.7: see screen.hpp
 #include <squared/gui/src/insets.hpp>
-#include <squared/gui/ui.hpp>
 
 #include <chrono>
 #include <cstddef>

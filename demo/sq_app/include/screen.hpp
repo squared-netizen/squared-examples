@@ -5,7 +5,9 @@
 #ifndef demo_SCREEN_HPP
 #define demo_SCREEN_HPP
 
-#include <squared/gui/ui.hpp>
+// The demo runs its own screens on the gui Ui, internal to squared since 7.7,
+// until it moves to sq::App (Sprint 9).
+#include <squared/gui/src/detail/ui.hpp>
 
 #include <chrono>
 #include <memory>
