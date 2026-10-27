@@ -1,8 +1,11 @@
 {
   "note": "The first screen. One file per screen; its name is the file's.",
   "rows": [
-    [ { "type": "label", "text": "Hello" } ],
-    [ { "type": "button", "text": "About", "tap": "push about" } ],
-    [ { "type": "button", "text": "Quit", "tap": "open quit" } ]
+    [ { "type": "label", "text": "Hello", "span": 2 } ],
+    [ { "type": "label", "text": "Up for" },
+      { "type": "label", "text": "-", "bind": "clock.seconds" } ],
+    [ { "type": "button", "text": "Settings", "tap": "push settings", "span": 2 } ],
+    [ { "type": "button", "text": "About", "tap": "push about", "span": 2 } ],
+    [ { "type": "button", "text": "Quit", "tap": "open quit", "span": 2 } ]
   ]
 }

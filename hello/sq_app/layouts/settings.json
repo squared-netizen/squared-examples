@@ -1,0 +1,11 @@
+{
+  "note": "Bound widgets: each shows what the model states, and the check box and the slider send set when they change.",
+  "rows": [
+    [ { "type": "check_box", "text": "Sound", "bind": "settings.sound", "span": 2 } ],
+    [ { "type": "label", "text": "Volume" },
+      { "type": "label", "text": "-", "bind": "settings.volume" } ],
+    [ { "type": "slider", "min": 0.0, "max": 10.0, "step": 1.0, "bind": "settings.volume",
+        "fill_x": true, "span": 2 } ],
+    [ { "type": "button", "text": "Back", "tap": "back", "span": 2 } ]
+  ]
+}

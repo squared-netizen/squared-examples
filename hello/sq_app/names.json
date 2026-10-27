@@ -1,4 +1,9 @@
 {
-  "note": "The model's addresses (none yet), and the screens written in C++, which the layouts may push.",
+  "note": "The model's addresses, and the screens written in C++, which the layouts may push.",
+  "names": {
+    "settings.sound":  { "type": "bool",   "verbs": ["state", "set"], "note": "Sound on or off" },
+    "settings.volume": { "type": "number", "verbs": ["state", "set"], "note": "From 0 to 10" },
+    "clock.seconds":   { "type": "int",    "verbs": ["state"],        "note": "Seconds since the model started" }
+  },
   "screens": ["about"]
 }
