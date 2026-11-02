@@ -14,9 +14,13 @@ several examples at the same framework commit cost about one copy.
 
 `<example>/SQUARED_REV` names the squared package commit that copy came from.
 
-Never committed: build output (`<example>/build/`,
-`<example>/squared/build/release/`, `<example>/squared/build/debug/`) and
-`*.bak.*` files. `squared/build/common.mk` is source, and is committed.
+Never committed: build output (`<example>/build/`, and every directory under
+`<example>/squared/build/`: `release/`, `debug/`, `host/` where a project
+builds sqgen and sqconsole for this machine) and `*.bak.*` files. The files
+directly in `squared/build/` (`common.mk`, `modules.mk`, `std.cppm`) are
+source, and are committed. Until 2026-11-02 only `release/` and `debug/` were
+named, and a `host/` from `make console` stopped `vendor_framework.sh demo`
+as "not the package commit it came from".
 
 ## Framework code travels one way: package to example
 
@@ -36,8 +40,8 @@ The tools enforce it:
 commit), so a fix must be committed to the package before an example can have it.
 
 It writes only what changed: files the commit holds unchanged are left as
-they are, timestamps included, and the framework's build output
-(`squared/build/release`, `build/debug`) is kept, so the next `make` rebuilds
+they are, timestamps included, and the framework's build output (every
+directory under `squared/build/`) is kept, so the next `make` rebuilds
 only what depends on the changed files. Written files get the current time;
 files the commit dropped are removed. Replaced and removed files are backed up
 to `~/.cache/squared-template-backups/<stamp>/<example>/squared/`, and only

@@ -42,7 +42,11 @@ PKG_REPO=$HOME/projects/squared-pg/resources/.squared
 TREE=packages/package.squared-core/tree
 # Top-level .gitignore rules for squared-examples; they cover every example dir.
 # squared/.vendored-rev was written by an earlier vendor_framework.sh; ignored.
-IGNORE=('/*/build/' '/*/squared/build/release/' '/*/squared/build/debug/' '/*/squared/.vendored-rev' '*.bak.*')
+# The framework's build output is every directory under squared/build/ (its own
+# files there are files): release, debug, and since 7b.4 host, where a project
+# builds sqgen and sqconsole for this machine. The release and debug rules of
+# before stay in .gitignore files that have them; they say less than this one.
+IGNORE=('/*/build/' '/*/squared/build/*/' '/*/squared/.vendored-rev' '*.bak.*')
 # A rule from before examples carried their framework; removed if present.
 RETIRED='/*/squared/'
 
@@ -129,8 +133,9 @@ TMP=$(mktemp -d "${TMPDIR:-/tmp}/sqpush.XXXXXX")
 trap 'rm -rf "$TMP"' EXIT
 git -C "$PKG_REPO" archive --format=tar "$FW_REV" "$TREE/squared" | tar -x -C "$TMP"
 # Files of a framework tree, skipping only build output, the marker and backups.
+# Build output is any directory under build/ (vendor_framework.sh does the same).
 fw_files() {
-  (cd "$1" && find . \( -path ./build/release -o -path ./build/debug -o -path ./.vendored-rev \
+  (cd "$1" && find . \( \( -path './build/*' -type d \) -o -path ./.vendored-rev \
     -o -name '*.bak.*' \) -prune -o -type f -print | LC_ALL=C sort)
 }
 fw_files "$TMP/$TREE/squared" >"$TMP/want"
@@ -169,7 +174,7 @@ done
 # The files that belong in the example: everything except build output, .git
 # and backups. Printed relative to the source, NUL-separated.
 list_source() {
-  (cd "$SRC" && find . \( -path ./build -o -path ./squared/build/release -o -path ./squared/build/debug \
+  (cd "$SRC" && find . \( -path ./build -o \( -path './squared/build/*' -type d \) \
     -o -path ./squared/.vendored-rev -o -name .git -o -name '*.bak.*' \) -prune -o ! -type d -print0)
 }
 
@@ -207,7 +212,9 @@ else
   # Anything tracked that the rules now exclude is untracked; it stays on disk.
   git ls-files -ci --exclude-standard "${excl[@]}" -z -- "$SUBDIR" | xargs -0 -r git rm --cached -q --
   git add -A -- .gitignore "$SUBDIR"
-  bad=$(git diff --cached --name-only -- "$SUBDIR/build" "$SUBDIR/squared/build/release" "$SUBDIR/squared/build/debug" | head -5)
+  # The example's build/, and anything in a directory under squared/build/.
+  bad=$(git diff --cached --name-only -- "$SUBDIR/build" "$SUBDIR/squared/build" |
+    grep -E "^$SUBDIR/build/|^$SUBDIR/squared/build/[^/]+/" | head -5 || true)
   [ -z "$bad" ] || die "build output is staged under $SUBDIR/ (e.g. $bad); nothing committed"
   if git diff --cached --quiet; then
     echo "  nothing changed since the last commit"

@@ -28,7 +28,9 @@
 # Only what changed is written (since 2026-10-19). A file the commit holds
 # unchanged is left alone, timestamp and all; a changed or new file is written
 # with the current time; a file the commit no longer has is removed. The
-# framework's build output (squared/build/release, build/debug) is kept. So
+# framework's build output is kept: every directory under squared/build/
+# (release, debug, host for sqgen and sqconsole, cache, lint; the framework's
+# own files there are files, not directories). So
 # the next `make` rebuilds only what depends on the files that changed,
 # instead of the whole framework and every application file that includes it.
 # Each replaced or removed file is backed up first, and only those.
@@ -75,8 +77,11 @@ fi
 [ ${#examples[@]} -gt 0 ] || die "name an example (e.g. demo) or pass --all"
 
 # Files of a framework tree, skipping only build output, the marker and backups.
+# Build output is any directory under build/: release and debug, and since 7b.4
+# host (sqgen and sqconsole built for this machine), which stopped demo's
+# vendoring as "not the package commit" (2026-11-02).
 fw_files() {
-  (cd "$1" && find . \( -path ./build/release -o -path ./build/debug -o -path ./.vendored-rev \
+  (cd "$1" && find . \( \( -path './build/*' -type d \) -o -path ./.vendored-rev \
     -o -name '*.bak.*' \) -prune -o -type f -print | LC_ALL=C sort)
 }
 
@@ -114,7 +119,7 @@ sync_tree() {
     mv "$to/$f" "$backup/$f"
   done < <(LC_ALL=C comm -13 "$TMP/new" "$TMP/old")
   # Directories the removals emptied, never the build output.
-  find "$to" \( -path "$to/build/release" -o -path "$to/build/debug" \) -prune -o \
+  find "$to" \( -path "$to/build/*" -type d \) -prune -o \
     -type d -empty -print 2>/dev/null | LC_ALL=C sort -r | while IFS= read -r d; do
     [ "$d" = "$to" ] || rmdir "$d" 2>/dev/null || true
   done
