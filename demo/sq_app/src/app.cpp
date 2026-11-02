@@ -5,14 +5,11 @@
 #include "services.hpp"
 #include "trace.hpp"
 
-#include <squared/app/event.hpp>
-#include <squared/app/runtime.hpp>
-#include <squared/graphics/color.hpp>
-#include <squared/graphics/context.hpp>
-#include <squared/gui/src/insets.hpp>
+import sq.app;
+import sq.graphics;
+import sq.gui;
+import sq.std;
 
-#include <chrono>
-#include <memory>
 
 namespace demo {
 

@@ -13,10 +13,9 @@
 #ifndef demo_APP_HPP
 #define demo_APP_HPP
 
-#include <squared/app/application.hpp>
+import sq.app;
 
-#include <chrono>
-#include <memory>
+import sq.std;
 
 namespace demo {
 

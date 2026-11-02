@@ -7,15 +7,12 @@
 
 // The demo runs its own screens on the gui Ui, internal to squared since 7.7,
 // until it moves to sq::App (Sprint 9).
-#include <squared/gui/src/detail/ui.hpp>
+import sq.gui;
 
-#include <chrono>
-#include <memory>
-#include <string_view>
+#include <stdlib.h>
 
-namespace sq::app {
-struct Event;
-}  // namespace sq::app
+import sq.app;
+import sq.std;
 
 namespace demo {
 

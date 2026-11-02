@@ -4,11 +4,9 @@
 #include "screens/settings_screen.hpp"
 #include "services.hpp"
 
-#include <squared/gui/button.hpp>
-#include <squared/gui/label.hpp>
-#include <squared/gui/linear_layout.hpp>
+import sq.gui;
+import sq.std;
 
-#include <memory>
 
 namespace demo {
 

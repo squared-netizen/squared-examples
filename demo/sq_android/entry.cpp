@@ -29,16 +29,14 @@
 #include "android_text.hpp"
 #include "app.hpp"
 
-#include <squared/app/event.hpp>
-#include <squared/app/runtime.hpp>
-#include <squared/assets/asset_manager.hpp>
-#include <squared/files/android_asset_file_system.hpp>
-#include <squared/app/safe_area.hpp>
-#include <squared/app/src/key.hpp>
-#include <squared/app/src/key_modifiers.hpp>
-#include <squared/app/src/navigation.hpp>
-#include <squared/graphics/context.hpp>
-#include <squared/graphics/src/context_config.hpp>
+#include <stdarg.h>
+#include <stdio.h>
+
+import sq.app;
+import sq.assets;
+import sq.files;
+import sq.graphics;
+import sq.std;
 
 #include <android/configuration.h>
 #include <android/log.h>
@@ -50,21 +48,13 @@
 #include <jni.h>
 #include <unistd.h>
 
-#include <algorithm>
-#include <array>
-#include <cmath>
-#include <chrono>
-#include <cstdint>
-#include <cstring>
-#include <memory>
 
 // Development builds only (`make DEV_LOG=1`): every log line below is also sent
 // to a UDP port on this device, a fatal signal sends a backtrace, and frames
 // whose update() or render() allocate are reported. The value of
 // SQUARED_DEV_LOG is the port. Nothing of this exists in a normal build.
 #ifdef SQUARED_DEV_LOG
-#include <squared/dev/dev_log.hpp>
-#include <squared/dev/frame_allocations.hpp>
+import sq.dev;
 #endif
 
 // The in-app Console (`make CONSOLE=app`): drawn over the application's frame,
@@ -75,21 +65,10 @@
 // opens it come later (Sprint 4.5), so it is open from the start and its [x]
 // closes it for the rest of the run.
 #ifdef SQUARED_CONSOLE
-#include <squared/console/console.hpp>
-#include <squared/console/layout.hpp>
-#include <squared/console/renderer.hpp>
-#include <squared/console/copy_command.hpp>
-#include <squared/console/crash_file.hpp>
-#include <squared/console/system_commands.hpp>
-#include <squared/console/bridge.hpp>
-#include <squared/console/file_commands.hpp>
-#include <squared/console/log_file.hpp>
+import sq.console;
 #endif
 
 #if defined(SQUARED_DEV_LOG) || defined(SQUARED_CONSOLE)
-#include <cstdarg>
-#include <cstdio>
-#include <string_view>
 #endif
 
 namespace {

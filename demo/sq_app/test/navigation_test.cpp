@@ -9,12 +9,12 @@
 #include "screen_stack.hpp"
 #include "services.hpp"
 
-#include <squared/app/event.hpp>
+#include <assert.h>
+#include <stdlib.h>
 
-#include <cassert>
-#include <cstdio>
-#include <memory>
-#include <string_view>
+import sq.app;
+import sq.std;
+
 
 using namespace demo;
 

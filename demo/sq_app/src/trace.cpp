@@ -2,11 +2,11 @@
 
 #ifdef SQUARED_DEV_LOG
 
-#include <squared/dev/dev_log.hpp>
+import sq.dev;
 
-#include <cstdarg>
-#include <cstddef>
-#include <cstdio>
+#include <stdarg.h>
+
+import sq.std;
 
 namespace demo {
 

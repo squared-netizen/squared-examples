@@ -1,26 +1,11 @@
 #include "services.hpp"
 
-#include <squared/app/runtime.hpp>
-#include <squared/graphics/context.hpp>
-#include <squared/files/file_handle.hpp>
-#include <squared/files/file_system.hpp>
-#include <squared/files/src/file_text_result.hpp>
-#include <squared/graphics/atlas_region.hpp>
-#include <squared/graphics/bitmap_font.hpp>
-#include <squared/graphics/src/bitmap_font_page.hpp>
-#include <squared/graphics/src/coordinate_origin.hpp>
-#include <squared/graphics/texture_region.hpp>
-#include <squared/gui/src/font_resource.hpp>
-#include <squared/gui/src/skin_load_issue.hpp>
-#include <squared/gui/src/skin_load_report.hpp>
-#include <squared/gui/src/skin_load_severity.hpp>
-#include <squared/gui/skin_loader.hpp>
+import sq.app;
+import sq.files;
+import sq.graphics;
+import sq.gui;
+import sq.std;
 
-#include <memory>
-#include <string>
-#include <string_view>
-#include <utility>
-#include <vector>
 
 namespace demo {
 

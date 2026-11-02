@@ -4,19 +4,13 @@
 #include "services.hpp"
 #include "trace.hpp"
 
-#include <squared/app/event.hpp>
-#include <squared/graphics/sprite_batch.hpp>
-#include <squared/graphics/color.hpp>
-#include <squared/gui/batch_painter.hpp>
-#include <squared/gui/src/rectangle.hpp>
-#include <squared/gui/src/size.hpp>
-#include <squared/gui/widget.hpp>
+#include <stdlib.h>
 
-#include <chrono>
-#include <cstddef>
-#include <memory>
-#include <string_view>
-#include <utility>
+import sq.app;
+import sq.graphics;
+import sq.gui;
+import sq.std;
+
 
 namespace demo {
 

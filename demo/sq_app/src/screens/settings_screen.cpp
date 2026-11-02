@@ -3,13 +3,9 @@
 #include "screen_stack.hpp"
 #include "services.hpp"
 
-#include <squared/gui/button.hpp>
-#include <squared/gui/check_box.hpp>
-#include <squared/gui/label.hpp>
-#include <squared/gui/linear_layout.hpp>
-#include <squared/gui/margin_container.hpp>
+import sq.gui;
+import sq.std;
 
-#include <memory>
 
 namespace demo {
 

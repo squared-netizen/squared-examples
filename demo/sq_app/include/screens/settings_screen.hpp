@@ -7,7 +7,7 @@
 
 #include "screen.hpp"
 
-#include <string_view>
+import sq.std;
 
 namespace demo {
 

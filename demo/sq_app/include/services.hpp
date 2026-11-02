@@ -5,24 +5,12 @@
 #ifndef demo_SERVICES_HPP
 #define demo_SERVICES_HPP
 
-#include <squared/graphics/orthographic_camera.hpp>
-#include <squared/graphics/sprite_batch.hpp>
-#include <squared/graphics/texture_atlas.hpp>
-#include <squared/gui/batch_painter.hpp>
-#include <squared/gui/src/font_ptr.hpp>
-#include <squared/gui/skin.hpp>
+import sq.graphics;
+import sq.gui;
 
-#include <memory>
-#include <string>
-#include <utility>
-
-namespace sq::app {
-struct Runtime;
-}  // namespace sq::app
-
-namespace sq::graphics {
-class Context;
-}  // namespace sq::graphics
+import sq.app;
+import sq.graphics;
+import sq.std;
 
 namespace demo {
 

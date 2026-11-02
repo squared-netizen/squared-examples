@@ -5,22 +5,11 @@
 #ifndef demo_SCREEN_STACK_HPP
 #define demo_SCREEN_STACK_HPP
 
-#include <squared/gui/src/detail/ui.hpp>  // internal since 7.7: see screen.hpp
-#include <squared/gui/src/insets.hpp>
+import sq.gui;
 
-#include <chrono>
-#include <cstddef>
-#include <memory>
-#include <string_view>
-#include <vector>
-
-namespace sq::app {
-struct Event;
-}  // namespace sq::app
-
-namespace sq::graphics {
-class Context;
-}  // namespace sq::graphics
+import sq.app;
+import sq.graphics;
+import sq.std;
 
 namespace demo {
 
