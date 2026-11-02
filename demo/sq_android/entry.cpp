@@ -26,27 +26,26 @@
 // gets a black window and a log line, which is what the old __has_include
 // guard was for.
 
-#include "android_text.hpp"
-#include "app.hpp"
-
-#include <stdarg.h>
-#include <stdio.h>
-
-import sq.app;
-import sq.assets;
-import sq.files;
-import sq.graphics;
-import sq.std;
-
 #include <android/configuration.h>
-#include <android/log.h>
 #include <android/keycodes.h>
+#include <android/log.h>
 #include <android/looper.h>
 #include <android_native_app_glue.h>
 #include <dlfcn.h>
 #include <fcntl.h>
 #include <jni.h>
+#include <stdarg.h>
+#include <stdio.h>
 #include <unistd.h>
+
+#include "android_text.hpp"
+#include "app.hpp"
+
+import sq.app;
+import sq.assets;
+import sq.files;
+import sq.graphics;
+import std;
 
 
 // Development builds only (`make DEV_LOG=1`): every log line below is also sent

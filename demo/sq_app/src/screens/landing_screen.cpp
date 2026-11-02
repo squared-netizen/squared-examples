@@ -5,7 +5,7 @@
 #include "services.hpp"
 
 import sq.gui;
-import sq.std;
+import std;
 
 
 namespace demo {

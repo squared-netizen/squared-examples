@@ -9,10 +9,8 @@
 // until it moves to sq::App (Sprint 9).
 import sq.gui;
 
-#include <stdlib.h>
-
 import sq.app;
-import sq.std;
+import std;
 
 namespace demo {
 

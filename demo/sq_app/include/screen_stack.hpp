@@ -9,7 +9,7 @@ import sq.gui;
 
 import sq.app;
 import sq.graphics;
-import sq.std;
+import std;
 
 namespace demo {
 

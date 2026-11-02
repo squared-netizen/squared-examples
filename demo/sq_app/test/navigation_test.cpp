@@ -10,10 +10,9 @@
 #include "services.hpp"
 
 #include <assert.h>
-#include <stdlib.h>
 
 import sq.app;
-import sq.std;
+import std;
 
 
 using namespace demo;

@@ -15,7 +15,7 @@
 
 import sq.app;
 
-import sq.std;
+import std;
 
 namespace demo {
 

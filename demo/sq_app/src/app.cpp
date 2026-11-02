@@ -8,7 +8,7 @@
 import sq.app;
 import sq.graphics;
 import sq.gui;
-import sq.std;
+import std;
 
 
 namespace demo {
