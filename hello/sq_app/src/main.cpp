@@ -27,14 +27,8 @@
 
 #include <layouts.hpp>
 #include <names.hpp>
-#include <squared/squared.hpp>
+import squared;
 
-#include <array>
-#include <cstddef>
-#include <cstdint>
-#include <cstdio>
-#include <string_view>
-#include <vector>
 
 namespace {
 
