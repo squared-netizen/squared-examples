@@ -1,6 +1,6 @@
 # class Stage
 
-*Defined at [stage/stage.cppm:97](../../../stage/stage.cppm#L97)*
+*Defined at [stage/stage.cppm:109](../../../stage/stage.cppm#L109)*
 
 
 
@@ -46,13 +46,13 @@ public static const std::size_t scratch_numbers
 
 *public void Stage(Stage && )*
 
-*Defined at [stage/stage.cppm:139](../../../stage/stage.cppm#L139)*
+*Defined at [stage/stage.cppm:151](../../../stage/stage.cppm#L151)*
 
 ### Stage
 
 *public void Stage(const Stage & )*
 
-*Defined at [stage/stage.cppm:137](../../../stage/stage.cppm#L137)*
+*Defined at [stage/stage.cppm:149](../../../stage/stage.cppm#L149)*
 
 ### Stage
 
@@ -62,7 +62,7 @@ public static const std::size_t scratch_numbers
 
 *public bool add()*
 
-*Defined at [stage/stage.cppm:202](../../../stage/stage.cppm#L202)*
+*Defined at [stage/stage.cppm:214](../../../stage/stage.cppm#L214)*
 
 
 
@@ -83,6 +83,20 @@ public static const std::size_t scratch_numbers
 
 
 **brief** How many widgets on the screen and its panes show a value of the model's. 
+
+### clipboard
+
+*public app::ClipboardService * clipboard()*
+
+*Defined at [stage/stage.cppm:277](../../../stage/stage.cppm#L277)*
+
+
+
+**brief** The platform's clipboard: what a paste reads, a copy writes; nullptr where the platform gives none (a host test, until it does).
+
+
+
+ if( sq::app::ClipboardService *clip = stage.clipboard() ) { clip->set_text( "copied" ); }
 
 ### close
 
@@ -120,11 +134,21 @@ public static const std::size_t scratch_numbers
 
 *public bool failed()*
 
-*Defined at [stage/stage.cppm:257](../../../stage/stage.cppm#L257)*
+*Defined at [stage/stage.cppm:302](../../../stage/stage.cppm#L302)*
 
 
 
 **brief** The skin could not be loaded: the Stage draws dark red. 
+
+### files
+
+*public files::FileSystem * files()*
+
+*Defined at [stage/stage.cppm:267](../../../stage/stage.cppm#L267)*
+
+
+
+**brief** The app's files (the platform's: `Internal` is what the APK bundles), for a custom widget that reads its own (a font to `map`); nullptr before the first window.
 
 ### find
 
@@ -138,7 +162,7 @@ public static const std::size_t scratch_numbers
 
 *public void hide_bars(bool hide)*
 
-*Defined at [stage/stage.cppm:275](../../../stage/stage.cppm#L275)*
+*Defined at [stage/stage.cppm:320](../../../stage/stage.cppm#L320)*
 
 
 
@@ -148,13 +172,13 @@ public static const std::size_t scratch_numbers
 
 *public bool hides_bars()*
 
-*Defined at [stage/stage.cppm:276](../../../stage/stage.cppm#L276)*
+*Defined at [stage/stage.cppm:321](../../../stage/stage.cppm#L321)*
 
 ### keep_screens
 
 *public void keep_screens(bool keep)*
 
-*Defined at [stage/stage.cppm:266](../../../stage/stage.cppm#L266)*
+*Defined at [stage/stage.cppm:311](../../../stage/stage.cppm#L311)*
 
 
 
@@ -164,7 +188,7 @@ public static const std::size_t scratch_numbers
 
 *public bool keeps_screens()*
 
-*Defined at [stage/stage.cppm:267](../../../stage/stage.cppm#L267)*
+*Defined at [stage/stage.cppm:312](../../../stage/stage.cppm#L312)*
 
 ### lists
 
@@ -174,11 +198,19 @@ public static const std::size_t scratch_numbers
 
 **brief** How many lists the screen and its panes show. 
 
+### on_surface
+
+*public void on_surface(SurfaceHook hook, void * context)*
+
+
+
+**brief** Call `hook( context, graphics )` each time the drawing surface is made (the first, and each one after Android took it away), before the screen is built again: what an app's own textures need to come back. One; a later call replaces it, and null removes it. `context` must outlive the Stage or be removed.
+
 ### open
 
 *public bool open()*
 
-*Defined at [stage/stage.cppm:188](../../../stage/stage.cppm#L188)*
+*Defined at [stage/stage.cppm:200](../../../stage/stage.cppm#L200)*
 
 
 
@@ -196,13 +228,13 @@ public static const std::size_t scratch_numbers
 
 *public Stage & operator=(Stage && )*
 
-*Defined at [stage/stage.cppm:140](../../../stage/stage.cppm#L140)*
+*Defined at [stage/stage.cppm:152](../../../stage/stage.cppm#L152)*
 
 ### operator=
 
 *public Stage & operator=(const Stage & )*
 
-*Defined at [stage/stage.cppm:138](../../../stage/stage.cppm#L138)*
+*Defined at [stage/stage.cppm:150](../../../stage/stage.cppm#L150)*
 
 ### pane_name
 
@@ -220,11 +252,19 @@ public static const std::size_t scratch_numbers
 
 **brief** How many panes are open, once what waits has happened. 
 
+### pixels_per_unit
+
+*public float pixels_per_unit()*
+
+
+
+**brief** Pixels to one logical unit (the drawable's shorter side is 720 units), for a custom widget that draws pixel-exact, as a terminal's glyphs are; 0 before the first window.
+
 ### push
 
 *public bool push()*
 
-*Defined at [stage/stage.cppm:159](../../../stage/stage.cppm#L159)*
+*Defined at [stage/stage.cppm:171](../../../stage/stage.cppm#L171)*
 
 
 
@@ -250,7 +290,7 @@ public static const std::size_t scratch_numbers
 
 *public void replace()*
 
-*Defined at [stage/stage.cppm:166](../../../stage/stage.cppm#L166)*
+*Defined at [stage/stage.cppm:178](../../../stage/stage.cppm#L178)*
 
 
 
@@ -260,7 +300,7 @@ public static const std::size_t scratch_numbers
 
 *public bool showing()*
 
-*Defined at [stage/stage.cppm:236](../../../stage/stage.cppm#L236)*
+*Defined at [stage/stage.cppm:248](../../../stage/stage.cppm#L248)*
 
 
 
@@ -270,7 +310,7 @@ public static const std::size_t scratch_numbers
 
 *public messaging::TelegraphUi & telegraph()*
 
-*Defined at [stage/stage.cppm:248](../../../stage/stage.cppm#L248)*
+*Defined at [stage/stage.cppm:260](../../../stage/stage.cppm#L260)*
 
 
 
