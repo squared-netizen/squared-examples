@@ -48,6 +48,15 @@ sq::app::KeyModifiers held{.shift = true};   // build one with designated initia
 if (held.any()) { /* ... */ }
 ```
 
+`Key` names the keys that do something rather than type: the arrows, Home
+and End, Backspace and Delete, Enter, Space, Tab, Escape, and from 12.3d the
+ones a terminal needs, `page_up`, `page_down`, `insert`, `f1` to `f12`. What
+a key types (letters, digits, punctuation) comes as `TextInput` text; with
+Ctrl, Alt or Meta held, as the character without them plus those modifiers
+in `event.modifiers` (Ctrl-C is `"c"` with `control`), which the GUI gives to
+`Widget::key_text` instead of `text_input`. A key that types something else
+with them held (AltGr's `@` on a German keyboard) comes as plain text.
+
 | Type | Values |
 |---|---|
 | `Key` | `unknown`, `left`, `right`, `up`, `down`, `home`, `end`, `backspace`, `delete_key`, `enter`, `space`, `tab`, `escape`. A key squared doesn't name arrives as `unknown`, with the platform's code in `Event::input_device_id` |
@@ -78,7 +87,7 @@ private:
 
 `create`, `handle_event`, `update`, `render`, `dispose` and `quit_requested`
 are required. `pause`, `resume`, `resize`, `surface_created`,
-`surface_destroyed`, `set_text_input_service`, `set_report`, `foreground`,
+`surface_destroyed`, `set_text_input_service`, `set_clipboard_service`, `set_report`, `foreground`,
 `background`, `low_memory`, `set_saved_state`, `save_state`,
 `take_background_request` and `hides_bars` have empty defaults, so a desktop-only
 application can ignore them &mdash; but on Android `surface_destroyed` and
@@ -88,6 +97,7 @@ ignoring them is a bug that only shows on device.
 | Call | When the platform makes it |
 |---|---|
 | `set_report(report)` | before `create()`: `report(line)` says something went wrong (Android: the system log, and the Console when built in) |
+| `set_clipboard_service(service)` | after `create()`: the system clipboard (`ClipboardService`, below), or nullptr where the platform has none; nullptr again in `dispose()` (`sq::App` clears its Stage's) |
 | `foreground()` | the app is visible again (Android's start); not before the first `create()` |
 | `background()` | the app is no longer visible (Android's stop): it may never come back, so state is made safe here |
 | `low_memory()` | the system is short of memory |
@@ -101,7 +111,32 @@ ignoring them is a bug that only shows on device.
 `sq::App` is the `Application` an app uses: it hands each event to its
 Stage, which routes it to the widgets, and gives the `TextInputService*` it
 receives to them, so a focused text field raises the soft keyboard. The
-widgets' host it uses (`gui::Ui`) is internal since 7.7.
+widgets' host it uses (`gui::Ui`) is internal since 7.7. The
+`ClipboardService*` it receives goes to its Stage, where a widget reaches it
+(`stage.clipboard()`, [stage.md](stage.md#the-clipboard)).
+
+## The clipboard
+
+`sq::app::ClipboardService` (`squared/app/src/clipboard_service.cppm`) is the
+system clipboard's text, implemented by the platform (Android: the
+template's `sq_android::Clipboard`, ClipboardManager through JNI). Called on
+the application thread.
+
+| Member | Does |
+|---|---|
+| `text(out)` | the clipboard's text as UTF-8 into `out`: whole characters, in order, until one does not fit. Returns the bytes the whole text takes, whatever `out` holds; 0 when it holds no text |
+| `set_text(utf8)` | the clipboard holds `utf8` now; false when the platform refused |
+
+```cpp
+if( sq::app::ClipboardService *clipboard = stage.clipboard() ) {
+    std::string text( clipboard->text( {} ), '\0' ); // the size
+    clipboard->text( text );                          // then the text
+    clipboard->set_text( "copied" );
+}
+```
+
+Failure modes: nullptr for no clipboard (a host build, a platform without
+one); 0 from `text` for no text; false from `set_text`. Not bound to Lua.
 
 ## The safe area
 

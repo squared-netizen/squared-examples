@@ -153,6 +153,7 @@ class App final : public app::Application
 
         // sq::app::Application, for the platform.
         void set_text_input_service( app::TextInputService *service ) noexcept override;
+        void set_clipboard_service( app::ClipboardService *service ) noexcept override;
         void set_report( app::Report report ) noexcept override;
         [[nodiscard]] bool create( app::Runtime &runtime ) override;
         void handle_event( const app::Event &event ) override;
@@ -193,11 +194,12 @@ class App final : public app::Application
         bool to_background_ = false;
 };
 
-// The Telegraph line (88,000 bytes at the default knobs, which size it), then
-// the Stage (4,056 bytes, 2,960 of them what screens and panes keep), the
+// The Telegraph line (88,576 bytes at the default knobs, which size it), then
+// the Stage (4,088 bytes, 2,960 of them what screens and panes keep), the
 // model's runner, the path, the saved state's view, and the App's own few
-// bytes, rounded to the line's 64.
-static_assert( sizeof( App ) <= sizeof( messaging::TelegraphLine ) + 4224 );
+// bytes, rounded to the line's 64: 92,864 since 12.4 (the Stage's clipboard
+// pointer crossed a 64-byte step), the bound exactly.
+static_assert( sizeof( App ) <= sizeof( messaging::TelegraphLine ) + 4288 );
 
 } // namespace sq
 
